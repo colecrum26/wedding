@@ -7,6 +7,7 @@ function Header() {
             <nav>
                 <h1 id="header-title"><NavLink to="/">REBECCA & COLE</NavLink></h1>
                 <ul className="nav-links">
+                    <li className="nav-item"><NavLink to="/">Home</NavLink></li>
                     <li className="nav-item"><NavLink to="/schedule">Schedule</NavLink></li>
                     <li className="nav-item"><NavLink to="/travel">Travel</NavLink></li>
                     <li className="nav-item"><NavLink to="/registry">Registry</NavLink></li>
