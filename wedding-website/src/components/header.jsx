@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom";
+import "../style/header.css";
 
 function Header() {
     return (
         <header>
             <nav>
-                <h1 className="header-title"><NavLink>REBECCA & COLE</NavLink></h1>
+                <h1 id="header-title"><NavLink>REBECCA & COLE</NavLink></h1>
                 <ul className="nav-links">
                     <li className="nav-item"><NavLink>Schedule</NavLink></li>
                     <li className="nav-item"><NavLink>Travel</NavLink></li>

@@ -6,3 +6,16 @@ div {
   justify-content: center;
 }
 
+a {
+  text-decoration: none;
+}
+a:link, a:visited, a:active {
+  /* use var color from swatch template */
+  /* may change active to another color */
+  color: black;
+}
+a:hover {
+  color: blue;
+}
+
+
