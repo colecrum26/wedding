@@ -6,6 +6,7 @@ export default function Schedule() {
       <Header />
       <div className="content-wrapper">
         <h1>HELLO</h1>
+        {/* add search function from invite DB */}
         <form action="" className="form-field">
             <label htmlFor="name">Full Name</label>
             <input type="text" name="name" id="" />
