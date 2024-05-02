@@ -1,6 +1,6 @@
 import Header from "../components/header";
 
-function Registry() {
+export default function Registry() {
     return (
         <div>
             <Header />
@@ -9,4 +9,4 @@ function Registry() {
     );
 }
 
-export default Registry;
+// export default Registry;

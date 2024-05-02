@@ -1,6 +1,6 @@
 import Header from "../components/header";
 
-function ThingsToDo() {
+export default function ThingsToDo() {
     return (
         <div>
             <Header />
@@ -9,4 +9,4 @@ function ThingsToDo() {
     );
 }
 
-export default ThingsToDo;
+// export default ThingsToDo;

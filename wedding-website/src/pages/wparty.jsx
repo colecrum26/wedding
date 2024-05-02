@@ -1,6 +1,6 @@
 import Header from "../components/header";
 
-function WeddingParty() {
+export default function WeddingParty() {
     return (
         <div>
             <Header />
@@ -9,4 +9,4 @@ function WeddingParty() {
     );
 }
 
-export default WeddingParty;
+// export default WeddingParty;

@@ -1,6 +1,6 @@
 import Header from "../components/header";
 
-function Schedule() {
+export default function Schedule() {
     return (
         <div>
             <Header />
@@ -9,4 +9,4 @@ function Schedule() {
     );
 }
 
-export default Schedule;
+// export default Schedule;

@@ -1,6 +1,6 @@
 import Header from "../components/header";
 
-function Gallery() {
+export default function Gallery() {
     return (
         <div>
             <Header />
@@ -9,4 +9,4 @@ function Gallery() {
     );
 }
 
-export default Gallery;
+// export default Gallery;

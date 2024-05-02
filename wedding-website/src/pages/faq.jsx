@@ -1,6 +1,6 @@
 import Header from "../components/header";
 
-function FAQ() {
+export default function FAQ() {
     return (
         <div>
             <Header />
@@ -8,5 +8,3 @@ function FAQ() {
         </div>
     );
 }
-
-export default FAQ;

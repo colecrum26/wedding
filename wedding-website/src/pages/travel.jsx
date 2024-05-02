@@ -1,6 +1,6 @@
 import Header from "../components/header";
 
-function Travel() {
+export default function Travel() {
     return (
         <div>
             <Header />
@@ -8,5 +8,3 @@ function Travel() {
         </div>
     );
 }
-
-export default Travel;

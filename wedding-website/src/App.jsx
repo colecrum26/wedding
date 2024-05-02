@@ -1,12 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./home";
-import Schedule from "./pages/schedule";
-import Travel from "./pages/travel";
-import Registry from "./pages/registry";
-import Gallery from "./pages/gallery";
-import WeddingParty from "./pages/wparty";
-import ThingsToDo from "./pages/ttd";
-import FAQ from "./pages/faq";
+import { Home, Schedule, Travel, Registry, Gallery, WeddingParty, ThingsToDo, FAQ } from "./pages";
 import "./App.css";
 
 function App() {
