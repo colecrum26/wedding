@@ -5,15 +5,15 @@ function Header() {
     return (
         <header>
             <nav>
-                <h1 id="header-title"><NavLink>REBECCA & COLE</NavLink></h1>
+                <h1 id="header-title"><NavLink to="/">REBECCA & COLE</NavLink></h1>
                 <ul className="nav-links">
-                    <li className="nav-item"><NavLink>Schedule</NavLink></li>
-                    <li className="nav-item"><NavLink>Travel</NavLink></li>
-                    <li className="nav-item"><NavLink>Registry</NavLink></li>
-                    <li className="nav-item"><NavLink>Gallery</NavLink></li>
-                    <li className="nav-item"><NavLink>Wedding Party</NavLink></li>
-                    <li className="nav-item"><NavLink>Things to Do</NavLink></li>
-                    <li className="nav-item"><NavLink>FAQ</NavLink></li>
+                    <li className="nav-item"><NavLink to="/schedule">Schedule</NavLink></li>
+                    <li className="nav-item"><NavLink to="/travel">Travel</NavLink></li>
+                    <li className="nav-item"><NavLink to="/registry">Registry</NavLink></li>
+                    <li className="nav-item"><NavLink to="/gallery">Gallery</NavLink></li>
+                    <li className="nav-item"><NavLink to="/wedding-party">Wedding Party</NavLink></li>
+                    <li className="nav-item"><NavLink to="/things-to-do">Things to Do</NavLink></li>
+                    <li className="nav-item"><NavLink to="/questions">FAQ</NavLink></li>
                 </ul>
             </nav>
         </header>
