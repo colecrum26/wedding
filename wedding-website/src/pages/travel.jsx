@@ -5,6 +5,7 @@ export default function Travel() {
         <div>
             <Header />
             <h1>HELLO</h1>
+            <h3>Travel info will go here!</h3>
         </div>
     );
 }

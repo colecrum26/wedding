@@ -5,8 +5,7 @@ export default function ThingsToDo() {
         <div>
             <Header />
             <h1>HELLO</h1>
+            <h3>Fun stuff to do in Greenville will be here!</h3>
         </div>
     );
 }
-
-// export default ThingsToDo;

@@ -18,6 +18,17 @@ nav {
   margin: 40px 0 0 0;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  margin: 4px 0;
+}
+select {
+  margin: 4px 0;
+}
+
 a {
   text-decoration: none;
 }

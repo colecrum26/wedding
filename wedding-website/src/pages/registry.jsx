@@ -5,8 +5,7 @@ export default function Registry() {
         <div>
             <Header />
             <h1>HELLO</h1>
+            <h3>Registry links and info will go here!</h3>
         </div>
     );
 }
-
-// export default Registry;
