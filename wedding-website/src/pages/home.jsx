@@ -1,4 +1,5 @@
 import Header from "../components/header";
+import { NavLink } from "react-router-dom";
 import "../style/home.css";
 
 export default function Home() {
@@ -9,18 +10,16 @@ export default function Home() {
         <h1>HELLO</h1>
         <img src="" alt="our best look" />
       </div>
-      <div className="rsvp-dialogue">
-        <div className="rsvp-name">
+      <div className="general-info">
+        <div>
           <h2>Cole Crumrine</h2>
-        </div>
-        <p>&</p>
-        <div className="rsvp-name">
+          <p>&</p>
           <h2>Rebecca Norwood</h2>
-        </div>
-        <div className="rsvp-info">
           <h4>May 3, 2025</h4>
           <h5>Hotel Hartness, Greenville, South Carolina</h5>
-          <button>RSVP</button>
+        </div>
+        <div className="rsvp-container">
+          <NavLink className="faux" to="/rsvp">RSVP</NavLink>
         </div>
       </div>
     </div>
