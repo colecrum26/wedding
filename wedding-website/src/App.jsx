@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, Schedule, Travel, Registry, Gallery, WeddingParty, ThingsToDo, FAQ } from "./pages";
+import { Home, Schedule, Travel, Registry, Gallery, WeddingParty, ThingsToDo, FAQ, RSVP } from "./pages";
 import "./App.css";
 
 function App() {
@@ -14,6 +14,7 @@ function App() {
         <Route path="/wedding-party" element={<WeddingParty />}></Route>
         <Route path="/things-to-do" element={<ThingsToDo />}></Route>
         <Route path="/questions" element={<FAQ />}></Route>
+        <Route path="/rsvp" element={<RSVP />}></Route>
       </Routes>
     </Router>
   );

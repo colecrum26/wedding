@@ -6,6 +6,7 @@ export default function Schedule() {
       <Header />
       <div className="content-wrapper">
         <h1>HELLO</h1>
+        <h3>Our wedding schedule will go here!</h3>
       </div>
     </div>
   );

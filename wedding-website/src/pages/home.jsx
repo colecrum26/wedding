@@ -13,9 +13,14 @@ export default function Home() {
         <div className="rsvp-name">
           <h2>Cole Crumrine</h2>
         </div>
-            <div>&</div>
+        <p>&</p>
         <div className="rsvp-name">
-            <h2>Rebecca Norwood</h2>
+          <h2>Rebecca Norwood</h2>
+        </div>
+        <div className="rsvp-info">
+          <h4>May 3, 2025</h4>
+          <h5>Hotel Hartness, Greenville, South Carolina</h5>
+          <button>RSVP</button>
         </div>
       </div>
     </div>

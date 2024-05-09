@@ -6,5 +6,6 @@ import Gallery from "./gallery";
 import WeddingParty from "./wparty";
 import ThingsToDo from "./ttd";
 import FAQ from "./faq";
+import RSVP from "./rsvp";
 
-export { Home, Schedule, Travel, Registry, Gallery, WeddingParty, ThingsToDo, FAQ };
+export { Home, Schedule, Travel, Registry, Gallery, WeddingParty, ThingsToDo, FAQ, RSVP };
