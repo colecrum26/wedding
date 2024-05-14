@@ -1,6 +1,6 @@
 import Header from "../components/header";
 
-export default function RSVP() {
+export default function RSVPSearch() {
   return (
     <div>
       <Header />
