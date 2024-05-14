@@ -7,10 +7,11 @@ export default function WeddingParty() {
       <div className="content-wrapper wp">
         <div className="bp-list">
           <ul className="maids">
+            <span className="wp-list-title">BRIDESMAIDS</span>
             <li className="bp-item">MARY CONNOR COX</li>
-            <span className="wedding-role">(Maid of Honor)</span>
+            <span className="wedding-role">Maid of Honor</span>
             <li className="bp-item">HALEY HUGHES</li>
-            <span className="wedding-role">(Maid of Honor)</span>
+            <span className="wedding-role">Maid of Honor</span>
             <li className="bp-item">TORI CARTER</li>
             <li className="bp-item">LOGAN COLE</li>
             <li className="bp-item">REID COX</li>
@@ -24,8 +25,9 @@ export default function WeddingParty() {
         </div>
         <div className="bp-list">
           <ul className="men">
+            <span className="wp-list-title">GROOMSMEN</span>
             <li className="bp-item">SCOTT CRUMRINE</li>
-            <span className="wedding-role">(Best Man)</span>
+            <span className="wedding-role">Best Man</span>
             <li className="bp-item">DAVID ANDERSON</li>
             <li className="bp-item">REID CARTER</li>
             <li className="bp-item">DENTON COKER</li>

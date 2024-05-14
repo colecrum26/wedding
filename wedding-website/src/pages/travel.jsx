@@ -8,9 +8,9 @@ export default function Travel() {
                 {/* fix spacing */}
                 {/* link to HH website */}
                 <span>Hotel</span>
-                <h1 className="header-name">HOTEL HARTNESS</h1>
+                <h1 className="header-main">HOTEL HARTNESS</h1>
                 <span>Flight</span>
-                <h1 className="header-name">GREENVILLE-SPARTANBURG INTL AIRPORT (GSP)</h1>
+                <h1 className="header-main">GREENVILLE-SPARTANBURG INTL AIRPORT (GSP)</h1>
             </div>
         </div>
     );

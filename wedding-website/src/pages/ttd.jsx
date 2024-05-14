@@ -7,32 +7,72 @@ export default function ThingsToDo() {
       <Header />
       <div className="content-wrapper">
         <div className="activities">
-          <h1>PATTERSON KITCHEN + BAR</h1>
+          <h1 className="header-main">
+            PATTERSON <br />
+            KITCHEN + BAR
+          </h1>
           <p>110 Halston Avenue, Greenville, SC 29615</p>
-          <NavLink className="faux">View</NavLink>
+          <p>
+            A contemporary American restaurant with Southern and International
+            influences. Reservation required.
+          </p>
+          <NavLink
+            className="faux"
+            to="https://www.hotelhartness.com/experiences/dine"
+            target="_blank"
+          >
+            View
+          </NavLink>
         </div>
         <div className="activities">
-          <h1>THE CAPTAIN AT HOTEL HARTNESS</h1>
+          <h1 className="header-main">
+            THE CAPTAIN <br />
+            AT HOTEL HARTNESS
+          </h1>
           <p>120 Halston Avenue, Greenville, SC 29615</p>
-          <NavLink className="faux">View</NavLink>
+          <p>
+            A cozy, reclaimed barn wood-clad bar with a warm atmosphere to enjoy
+            craft cocktails, an extensive by the glass wine selection and light
+            bites.
+          </p>
+          <NavLink
+            className="faux"
+            to="https://www.hotelhartness.com/experiences/dine"
+            target="_blank"
+          >
+            View
+          </NavLink>
         </div>
         <div className="activities">
-          <h1>SPA H</h1>
+          <h1 className="header-main">SPA H</h1>
           <p>90 Traverse Drive, Greenville, SC 29615</p>
-          <NavLink className="faux">View</NavLink>
+          <p>Book a relaxing facial or massage at the hotel spa!</p>
+          <NavLink
+            className="faux"
+            to="https://www.hotelhartness.com/experiences/spa-h"
+            target="_blank"
+          >
+            View
+          </NavLink>
         </div>
         <div className="activities">
-          <h1>TOP GOLF</h1>
+          <h1 className="header-main">TOPGOLF</h1>
           <p>201 Clifton Court, Greenville, SC 29615</p>
-          <NavLink className="faux">View</NavLink>
+          <NavLink className="faux" to="https://topgolf.com/us/greenville/" target="_blank">View</NavLink>
         </div>
         <div className="activities">
-          <h1>BMW PERFORMANCE CENTER</h1>
+          <h1 className="header-main">BMW PERFORMANCE CENTER</h1>
           <p>1155 South Carolina 101, Greer, SC 29651</p>
-          <NavLink className="faux">View</NavLink>
+          <p>
+            Looking for a once-in-a-lifetime excursion? Check out the BMW
+            Performance Driving School located a short drive from Hotel
+            Hartness! We promise you won't regret booking this thrilling
+            experience.
+          </p>
+          <NavLink className="faux" to="https://bmwperformancecenter.com/" target="_blank">View</NavLink>
         </div>
         <div className="activities">
-          <h1>DOWNTOWN GREENVILLE</h1>
+          <h1 className="header-main">DOWNTOWN GREENVILLE</h1>
           <p>Greenville, SC 29601</p>
           <p>
             From walking through Falls Park, to shopping on Main Street, you

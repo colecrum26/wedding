@@ -37,7 +37,7 @@ header {
   top: 0;
   background-color: var(--primary-background);
 }
-.header-name {
+.header-main {
   font-family: "Cormorant Infant";
   font-size: 42px;
   font-weight: 100;
@@ -88,6 +88,7 @@ li {
 .content-wrapper {
   width: 100%;
   margin: 40px 0;
+  text-align: center;
 }
 .content-wrapper.wp {
   display: flex;
@@ -126,13 +127,22 @@ li {
   margin: 10px;
   padding: 10px;
   line-height: 2.5rem;
+  text-align: center;
 }
 .bp-item {
   font-size: 24px;
 }
-/* .wedding-role {
+.wp-list-title {
+  font-family: "Cormorant Infant";
+  font-size: 32px;
+  /* font-weight: bolder; */
+  text-decoration: underline;
+  margin-bottom: 16px;
+  letter-spacing: 3px;
+}
+.wedding-role {
   align-self: center;
-} */
+}
 
 .activities {
   max-width: 600px;
