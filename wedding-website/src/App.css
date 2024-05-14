@@ -77,10 +77,23 @@ a:hover {
   font-weight: bold;
 }
 
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+
 .content-wrapper {
-  /* background-color: #fffeec; */
   width: 100%;
   margin-bottom: 40px;
+}
+.content-wrapper.wp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 .general-info {
@@ -105,4 +118,12 @@ a:hover {
   font-size: 24px;
 }
 
+.bp-list {
+  margin: 10px;
+  padding: 10px;
+  line-height: 2.5rem;
+}
+.bp-item {
+  font-size: 24px;
+}
 
