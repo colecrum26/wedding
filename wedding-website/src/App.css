@@ -87,7 +87,7 @@ li {
 
 .content-wrapper {
   width: 100%;
-  margin-bottom: 40px;
+  margin: 40px 0;
 }
 .content-wrapper.wp {
   display: flex;
@@ -118,6 +118,10 @@ li {
   font-size: 24px;
 }
 
+.maids, .men {
+  display: flex;
+  flex-direction: column;
+}
 .bp-list {
   margin: 10px;
   padding: 10px;
@@ -126,4 +130,13 @@ li {
 .bp-item {
   font-size: 24px;
 }
+/* .wedding-role {
+  align-self: center;
+} */
+
+.activities {
+  max-width: 600px;
+}
+
+
 
