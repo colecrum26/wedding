@@ -1,11 +1,12 @@
 import Header from "../components/header";
 
 export default function Registry() {
-    return (
-        <div>
-            <Header />
-            <h1>HELLO</h1>
-            <h3>Registry links and info will go here!</h3>
-        </div>
-    );
+  return (
+    <div className="page-container">
+      <Header />
+      <div>
+        <h3>We'll post our registry here as soon as we finish building it!</h3>
+      </div>
+    </div>
+  );
 }

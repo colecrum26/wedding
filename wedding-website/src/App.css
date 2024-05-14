@@ -1,3 +1,29 @@
+:root {
+  font-family: "Libre Baskerville";
+  /* --primary-background: rgb(221, 236, 210); */
+  --primary-background: #f9f9f3;
+  --primary-green: rgb(117, 149, 96);
+  --accent-darkGreen: rgb(79, 104, 61);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color: var(--primary-green);
+  background-color: var(--primary-background);
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
 div {
   display: flex;
   flex-direction: column;
@@ -9,13 +35,20 @@ header {
   position: sticky;
   position: -webkit-sticky;
   top: 0;
+  background-color: var(--primary-background);
+}
+.header-name {
+  font-family: "Cormorant Infant";
+  font-size: 42px;
+  font-weight: 100;
+  letter-spacing: 6px;
 }
 
 nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 40px 0 0 0;
+  margin-bottom: 20px;
 }
 
 form {
@@ -29,30 +62,47 @@ select {
   margin: 4px 0;
 }
 
+p {
+  font-size: 24px;
+}
+
 a {
   text-decoration: none;
 }
 a:link, a:visited, a:active {
-  /* use var color from swatch template */
-  /* may change active to another color */
-  color: black;
+  color: var(--primary-green);
 }
 a:hover {
-  color: blue;
+  color: var(--accent-darkGreen);
+  font-weight: bold;
 }
 
 .content-wrapper {
-  margin: 20px;
+  /* background-color: #fffeec; */
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+.general-info {
+  margin-top: 20px;
+}
+.general-info h1 {
+  margin: 0;
 }
 
 .faux {
-  background-color: black;
+  background-color: var(--accent-darkGreen);
   color: white !important;
   padding: 5px 20px;
   border-radius: 2px;
 }
 .faux:hover {
-  background-color: green;
+  background-color: var(--accent-darkGreen);
+}
+
+.address-link {
+  text-decoration: underline;
+  font-size: 24px;
 }
 
 
