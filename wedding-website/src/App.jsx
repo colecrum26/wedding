@@ -14,7 +14,7 @@ function App() {
         <Route path="/wedding-party" element={<WeddingParty />}></Route>
         <Route path="/things-to-do" element={<ThingsToDo />}></Route>
         <Route path="/questions" element={<FAQ />}></Route>
-        <Route path="/rsvp-find-party" element={<RSVPSearch />}></Route>
+        <Route path="/rsvp" element={<RSVPSearch />}></Route>
         {/* <Route path="/rsvp-respond" element={<RSVPRespond />}></Route> */}
       </Routes>
     </Router>

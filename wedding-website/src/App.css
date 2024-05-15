@@ -43,6 +43,9 @@ header {
   font-weight: 100;
   letter-spacing: 6px;
 }
+.header-main.page-top {
+  font-size: 46px;
+}
 
 nav {
   display: flex;

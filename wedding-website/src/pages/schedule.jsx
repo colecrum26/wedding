@@ -11,12 +11,26 @@ export default function Schedule() {
           <p id="io-note">(Invitation Only)</p>
           <p className="event-time">6:00pm - 8:00pm</p>
           <p>Hans & Franz Biergarten</p>
-          <a href="https://maps.app.goo.gl/u9faBurUW4bbZvHh6" className="address-link">3124 South Carolina 14, Greenvile, SC 29615</a>
+          <a
+            href="https://maps.app.goo.gl/u9faBurUW4bbZvHh6"
+            className="address-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            3124 South Carolina 14, Greenvile, SC 29615
+          </a>
           <p className="attire">Attire: Casual Cocktail</p>
           <h1 className="event-title">Welcome Party</h1>
           <p className="event-time">8:00pm - 10:00pm</p>
           <p>The Captain at Hotel Hartness</p>
-          <a href="https://maps.app.goo.gl/DXcL6Mjs8DtGCsM19" className="address-link">120 Halston Avenue, Greenville, SC 29615</a>
+          <a
+            href="https://maps.app.goo.gl/DXcL6Mjs8DtGCsM19"
+            className="address-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            120 Halston Avenue, Greenville, SC 29615
+          </a>
           <p className="attire">Attire: Casual Cocktail</p>
         </div>
         <div className="events">
@@ -24,12 +38,26 @@ export default function Schedule() {
           <h1 className="event-title">Ceremony & Reception</h1>
           <p className="event-time">6:00pm - 11:00pm</p>
           <p>Hotel Hartness</p>
-          <a href="https://maps.app.goo.gl/DXcL6Mjs8DtGCsM19" className="address-link">120 Halston Avenue, Greenville, SC 29615</a>
+          <a
+            href="https://maps.app.goo.gl/DXcL6Mjs8DtGCsM19"
+            className="address-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            120 Halston Avenue, Greenville, SC 29615
+          </a>
           <p className="attire">Attire: Black Tie</p>
           <h1 className="event-title">After Party</h1>
           <p className="event-time">11:00pm - 12:30am</p>
           <p>The Captain at Hotel Hartness</p>
-          <a href="https://maps.app.goo.gl/DXcL6Mjs8DtGCsM19" className="address-link">120 Halston Avenue, Greenville, SC 29615</a>
+          <a
+            href="https://maps.app.goo.gl/DXcL6Mjs8DtGCsM19"
+            className="address-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            120 Halston Avenue, Greenville, SC 29615
+          </a>
         </div>
       </div>
     </div>
