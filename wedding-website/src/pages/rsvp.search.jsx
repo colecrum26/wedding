@@ -1,6 +1,14 @@
+import { useState } from "react";
 import Header from "../components/header";
+import RSVPRespond from "./rsvp.respond";
 
 export default function RSVPSearch() {
+  const [showComponent, setShowComponent] = useState(false);
+
+  function handleClick() {
+    setShowComponent(true);
+  }
+
   return (
     <div>
       <Header />
@@ -13,7 +21,10 @@ export default function RSVPSearch() {
         </p>
         <input type="text" />
         <span>E.g. Johnny Appleseed, (not The Appleseeds or Mr. and Mrs. Appleseed)</span>
-        <button>Continue</button>
+        <button onClick={handleClick}>Continue</button>
+        <div>
+          {showComponent && <RSVPRespond />}
+        </div>
       </div>
     </div>
   );
