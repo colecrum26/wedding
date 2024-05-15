@@ -7,5 +7,7 @@ import WeddingParty from "./wparty";
 import ThingsToDo from "./ttd";
 import FAQ from "./faq";
 import RSVPSearch from "./rsvp.search";
+import RSVPRespond from "./rsvp.respond";
 
-export { Home, Schedule, Travel, Registry, Gallery, WeddingParty, ThingsToDo, FAQ, RSVPSearch };
+
+export { Home, Schedule, Travel, Registry, Gallery, WeddingParty, ThingsToDo, FAQ, RSVPSearch, RSVPRespond };

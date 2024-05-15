@@ -16,7 +16,7 @@ export default function Home() {
             <h3>Hotel Hartness, Greenville, South Carolina</h3>
           </div>
           <div className="rsvp-container">
-            <NavLink className="faux" to="/rsvp">
+            <NavLink className="faux" to="/rsvp-find-party">
               RSVP
             </NavLink>
           </div>
