@@ -11,7 +11,7 @@ export default function ThingsToDo() {
             PATTERSON <br />
             KITCHEN + BAR
           </h1>
-          <p>110 Halston Avenue, Greenville, SC 29615</p>
+          <a href="https://maps.app.goo.gl/yV5P16LvpHpnJhmw8" className="address-link" target="_blank">110 Halston Avenue, Greenville, SC 29615</a>
           <p>
             A contemporary American restaurant with Southern and International
             influences. Reservation required.
@@ -29,7 +29,7 @@ export default function ThingsToDo() {
             THE CAPTAIN <br />
             AT HOTEL HARTNESS
           </h1>
-          <p>120 Halston Avenue, Greenville, SC 29615</p>
+          <a href="https://maps.app.goo.gl/Pn66RdexLmsiRoft7" className="address-link" target="_blank">120 Halston Avenue, Greenville, SC 29615</a>
           <p>
             A cozy, reclaimed barn wood-clad bar with a warm atmosphere to enjoy
             craft cocktails, an extensive by the glass wine selection and light
@@ -45,7 +45,7 @@ export default function ThingsToDo() {
         </div>
         <div className="activities">
           <h1 className="header-main">SPA H</h1>
-          <p>90 Traverse Drive, Greenville, SC 29615</p>
+          <a href="https://maps.app.goo.gl/NA83Mj4yYnf7vPUJ8" className="address-link" target="_blank">90 Traverse Drive, Greenville, SC 29615</a>
           <p>
             Stretch out and feel your tensions ease at Spa H as expert
             therapists provide soothing massages and revitalizing facials. Ideal
@@ -61,7 +61,7 @@ export default function ThingsToDo() {
         </div>
         <div className="activities">
           <h1 className="header-main">TOPGOLF</h1>
-          <p>201 Clifton Court, Greenville, SC 29615</p>
+          <a href="https://maps.app.goo.gl/HNd5TpCgoFBJtsUy6" className="address-link" target="_blank">201 Clifton Court, Greenville, SC 29615</a>
           <p>
             Enjoy the sprawling entertainment venue with a high-tech driving
             range and swanky lounge with drinks and games.
@@ -76,7 +76,7 @@ export default function ThingsToDo() {
         </div>
         <div className="activities">
           <h1 className="header-main">BMW PERFORMANCE CENTER</h1>
-          <p>1155 South Carolina 101, Greer, SC 29651</p>
+          <a href="https://maps.app.goo.gl/bXLt5Wte9DWesdwe6" className="address-link" target="_blank">1155 South Carolina 101, Greer, SC 29651</a>
           <p>
             Looking for a once-in-a-lifetime excursion? Check out the BMW
             Performance Driving School located a short drive from Hotel

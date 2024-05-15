@@ -12,8 +12,8 @@ export default function Home() {
             <h1 className="header-main">REBECCA NORWOOD</h1>
             <p>and</p>
             <h1 className="header-main">COLE CRUMRINE</h1>
-            <h3>May 3, 2025</h3>
-            <h4>Hotel Hartness, Greenville, South Carolina</h4>
+            <h2>May 3, 2025</h2>
+            <h3>Hotel Hartness, Greenville, South Carolina</h3>
           </div>
           <div className="rsvp-container">
             <NavLink className="faux" to="/rsvp">
