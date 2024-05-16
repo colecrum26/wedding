@@ -4,6 +4,7 @@
   --primary-background: #f9f9f3;
   --primary-green: rgb(117, 149, 96);
   --accent-darkGreen: rgb(79, 104, 61);
+  --accent-darkerGreen: rgb(51, 76, 33);
 }
 
 * {
@@ -36,6 +37,7 @@ header {
   position: -webkit-sticky;
   top: 0;
   background-color: var(--primary-background);
+  width: 100%;
 }
 .header-main {
   font-family: "Cormorant Infant";
@@ -52,6 +54,7 @@ nav {
   flex-direction: column;
   align-items: center;
   margin-bottom: 20px;
+  width: inherit;
 }
 
 form {
@@ -112,9 +115,17 @@ li {
   color: white !important;
   padding: 5px 20px;
   border-radius: 2px;
+  box-shadow: 1.1px 1px 2px var(--accent-darkerGreen);
+  font-size: 18px;
 }
 .faux:hover {
   background-color: var(--accent-darkGreen);
+}
+.faux:active {
+  box-shadow: none;
+}
+.faux.special-case {
+  margin: 12px;
 }
 
 .address-link {
@@ -178,4 +189,21 @@ li {
   font-size: 18px; 
 }
 
+.question {
+  width: 800px;
+}
 
+.in-copy-link {
+  text-decoration: underline;
+}
+
+.travel-option {
+  width: 800px;
+  margin-bottom: 40px;
+}
+.travel-option p {
+  margin: 12px;
+}
+.block {
+  font-size: 18px;
+}

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import Header from "../components/header";
-import RSVPRespond from "./rsvp.respond";
+import RSVPRespond from "../components/rsvp.respond";
 
 export default function RSVPSearch() {
   const [guestList, setGuestList] = useState([]);
