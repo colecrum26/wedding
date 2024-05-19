@@ -8,6 +8,7 @@ export default function Travel() {
       <div className="content-wrapper">
         <div className="travel-option">
           <span>Hotel</span>
+          {/* adjust margin somewhere */}
           <h1 className="header-main">HOTEL HARTNESS</h1>
           <a
             href="https://maps.app.goo.gl/Pn66RdexLmsiRoft7"

@@ -4,6 +4,8 @@
   --primary-green: rgb(117, 149, 96);
   --accent-darkGreen: rgb(79, 104, 61);
   --accent-darkerGreen: rgb(51, 76, 33);
+  --accent-darkGreen-overlay: rgba(79, 104, 61, 0.8);
+  /* --accent-darkGold: #be9b0c; */
 }
 
 * {
@@ -108,7 +110,8 @@ li {
   font-size: 18px;
 }
 .faux:hover {
-  background-color: var(--accent-darkGreen);
+  border: 1px solid var(--accent-darkerGreen);
+  background-color: var(--accent-darkGreen-overlay);
 }
 .faux:active {
   box-shadow: none;
@@ -195,4 +198,8 @@ li {
 }
 .block {
   font-size: 18px;
+}
+
+.info-amper {
+  color: var(--accent-darkGold);
 }

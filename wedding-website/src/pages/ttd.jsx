@@ -11,6 +11,7 @@ export default function ThingsToDo() {
             PATTERSON <br />
             KITCHEN + BAR
           </h1>
+          {/* replace with H&F? */}
           <a
             href="https://maps.app.goo.gl/yV5P16LvpHpnJhmw8"
             className="address-link"

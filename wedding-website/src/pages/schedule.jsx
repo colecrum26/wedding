@@ -10,28 +10,29 @@ export default function Schedule() {
           <h1 className="event-title">Rehearsal Dinner</h1>
           <p id="io-note">(Invitation Only)</p>
           <p className="event-time">6:00pm - 8:00pm</p>
-          <p>Hans & Franz Biergarten</p>
+          {/* update location */}
+          <p>Patterson Kitchen & Bar</p>
           <a
-            href="https://maps.app.goo.gl/u9faBurUW4bbZvHh6"
+            href="https://maps.app.goo.gl/P1DLLtYHZG9etaMW8"
             className="address-link"
             target="_blank"
             rel="noreferrer"
           >
-            3124 South Carolina 14, Greenvile, SC 29615
+            110 Halston Avenue, Greenvile, SC 29615
           </a>
-          <p className="attire">Attire: Casual Cocktail</p>
+          <p className="attire">Attire: Cocktail</p>
           <h1 className="event-title">Welcome Party</h1>
           <p className="event-time">8:00pm - 10:00pm</p>
-          <p>The Captain at Hotel Hartness</p>
+          <p>Patterson Kitchen & Bar</p>
           <a
-            href="https://maps.app.goo.gl/DXcL6Mjs8DtGCsM19"
+            href="https://maps.app.goo.gl/P1DLLtYHZG9etaMW8"
             className="address-link"
             target="_blank"
             rel="noreferrer"
           >
-            120 Halston Avenue, Greenville, SC 29615
+            110 Halston Avenue, Greenville, SC 29615
           </a>
-          <p className="attire">Attire: Casual Cocktail</p>
+          <p className="attire">Attire: Cocktail</p>
         </div>
         <div className="events">
           <h1 className="header-main">SATURDAY, MAY 3, 2025</h1>
