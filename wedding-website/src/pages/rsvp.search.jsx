@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
+// import useNavigate;
 import Header from "../components/header";
 import RSVPRespond from "../components/rsvp.respond";
 
 export default function RSVPSearch() {
-  const [guestList, setGuestList] = useState([]);
-  const [guestName, setGuestName] = useState([]);
+  // const [guestList, setGuestList] = useState([]);
+  // const [guestNames, setGuestNames] = useState([]);
   const [showComponent, setShowComponent] = useState(false);
 
   // async function searchGuest() {
@@ -19,7 +20,9 @@ export default function RSVPSearch() {
   // }
 
   function handleClick() {
+    // if (guestList includes guestName => {})
     setShowComponent(true);
+    // else => "We cannot find your name." etc etc
   }
 
   // let guests = getListOf(list, "guest1");
