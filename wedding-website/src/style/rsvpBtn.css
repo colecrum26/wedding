@@ -4,9 +4,15 @@
     right: 2%;
     font-size: 20px;
     font-weight: 700;
-    /* background-color: var(--accent-darkGreen); */
-    /* color: white !important; */
     padding: 5px 20px;
     border-radius: 2px;
     box-shadow: 1.1px 1px 2px var(--accent-darkerGreen);
+}
+.rsvp-fauxbtn:hover {
+    border: 1px solid var(--accent-darkerGreen);
+    background-color: var(--accent-darkGreen-overlay);
+    color: white;
+}
+.rsvp-fauxbtn:active {
+    box-shadow: none;
 }
