@@ -1,11 +1,10 @@
 :root {
-  /* --primary-background: rgb(221, 236, 210); */
   --primary-background: #f9f9f3;
   --primary-green: rgb(117, 149, 96);
   --accent-darkGreen: rgb(79, 104, 61);
   --accent-darkerGreen: rgb(51, 76, 33);
   --accent-darkGreen-overlay: rgba(79, 104, 61, 0.8);
-  /* --accent-darkGold: #be9b0c; */
+  --accent-darkGold: #be9b0c;
 }
 
 * {
@@ -30,6 +29,7 @@ body {
 div {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
@@ -100,6 +100,9 @@ li {
 .general-info h1 {
   margin: 0;
 }
+.rsvp-container {
+  margin: 20px;
+}
 
 .faux {
   background-color: var(--accent-darkGreen);
@@ -141,9 +144,8 @@ li {
 .wp-list-title {
   font-family: "Cormorant Infant";
   font-size: 32px;
-  /* font-weight: bolder; */
   text-decoration: underline;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   letter-spacing: 3px;
 }
 .wedding-role {
@@ -157,7 +159,6 @@ li {
 .activities p {
   margin: 12px;
 }
- 
 
 .events p {
   margin: 12px;
@@ -198,8 +199,4 @@ li {
 }
 .block {
   font-size: 18px;
-}
-
-.info-amper {
-  color: var(--accent-darkGold);
 }

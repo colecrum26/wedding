@@ -37,7 +37,7 @@ export default function FAQ() {
         <div className="question">
           <h1 className="header-main">IS THERE A DRESS CODE?</h1>
           <p>
-            We ask that our guests wear black-tie attire. Want to dress for the
+            We ask that our guests wear black tie attire. Want to dress for the
             theme? Feel free to express yourself in fabulous formal
             garden-party-inspired attire! Consult the{" "}
             <a href="/schedule" className="in-copy-link">

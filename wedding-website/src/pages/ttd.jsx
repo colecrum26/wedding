@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import Header from "../components/header";
+import RSVPButton from "../components/rsvpBtn";
 
 export default function ThingsToDo() {
   return (
@@ -11,7 +12,6 @@ export default function ThingsToDo() {
             PATTERSON <br />
             KITCHEN + BAR
           </h1>
-          {/* replace with H&F? */}
           <a
             href="https://maps.app.goo.gl/yV5P16LvpHpnJhmw8"
             className="address-link"
@@ -142,6 +142,7 @@ export default function ThingsToDo() {
           </p>
         </div>
       </div>
+      <RSVPButton />
     </div>
   );
 }
