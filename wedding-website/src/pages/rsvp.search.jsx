@@ -4,8 +4,8 @@ import Header from "../components/header";
 import RSVPRespond from "../components/rsvp.respond";
 
 export default function RSVPSearch() {
-  // const [guestList, setGuestList] = useState([]);
-  // const [guestNames, setGuestNames] = useState([]);
+  const [guestList, setGuestList] = useState([]);
+  // const [searchedParty, setSearchedParty] = useState([]);
   const [showComponent, setShowComponent] = useState(false);
 
   async function searchGuest() {
@@ -13,20 +13,18 @@ export default function RSVPSearch() {
       let response = await fetch("http://localhost:5553/api/guests");
       let result = await response.json();
       console.log(result);
-      // setGuestList(result);
-    }
-    catch(err) {
+      setGuestList(result);
+    } catch (err) {
       alert(err);
     }
   }
+
 
   function handleClick() {
     // if (guestList includes guestName => {})
     setShowComponent(true);
     // else => "We cannot find your name." etc etc
   }
-
-  // let guests = getListOf(list, "guest1");
 
   useEffect(() => {
     searchGuest();
@@ -42,11 +40,11 @@ export default function RSVPSearch() {
           below. You'll be able to RSVP for you and a guest (or your family).
         </p>
         <input type="text" />
-        <span>E.g. Johnny Appleseed, (not The Appleseeds or Mr. and Mrs. Appleseed)</span>
+        <span>
+          E.g. Johnny Appleseed, (not The Appleseeds or Mr. and Mrs. Appleseed)
+        </span>
         <button onClick={handleClick}>Continue</button>
-        <div>
-          {showComponent && <RSVPRespond />}
-        </div>
+        <div>{showComponent && <RSVPRespond guests={guestList} />}</div>
       </div>
     </div>
   );

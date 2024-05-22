@@ -1,14 +1,20 @@
-import { useState } from "react";
-import { Form } from "react-router-dom";
+import { useEffect, useState } from "react";
 
-export default function RSVPRespond() {
+export default function RSVPRespond({guests}) {
+  const [guest1, setGuest1] = useState("");
+  const [guest2, setGuest2] = useState("");
   const [guest1RSVP, setGuest1RSVP] = useState("");
   const [guest2RSVP, setGuest2RSVP] = useState("");
 
-  function populateGuest() {
-    // if (1 guest) => {return name}
-    // else if (2+ guests) => {return names}
-  }
+  console.log(guests);
+
+
+  // async function populateGuest() {
+  //   return await guests.map((guest) => {
+  //     setGuest1(guest.g1_first + " " + guest.g1_last);
+  //     console.log(guest1);
+  //   })
+  // }
 
   function confirmRSVP(e) {
     e.preventDefault();
@@ -20,11 +26,20 @@ export default function RSVPRespond() {
     // send response(s) to RSVP table
   }
 
+
+  // useEffect(() => {
+  //   populateGuest();
+  // }, []);
+
   return (
     <div className="page-container">
       <div className="content-wrapper">
         <form onSubmit={confirmRSVP}>
-          <p>name 1</p>
+          
+
+
+          
+          {/* <p>name 1</p>
           <label htmlFor="rsvp-yes">Attending</label>
           <input type="checkbox" name="rsvp-yes" id="" />
           <label htmlFor="rsvp-no">Will Not Attend</label>
@@ -33,7 +48,7 @@ export default function RSVPRespond() {
           <label htmlFor="rsvp-yes">Attending</label>
           <input type="checkbox" name="rsvp-yes"/>
           <label htmlFor="rsvp-no">Will Not Attend</label>
-          <input type="checkbox" name="rsvp-no"/>
+          <input type="checkbox" name="rsvp-no"/> */}
           <button>Confirm RSVP</button>
           </form>
       </div>

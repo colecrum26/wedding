@@ -1,0 +1,18 @@
+ concat guest names? could delete everything else other than that
+ 
+ console.log(guestList);
+  const numberGuests = guestList.length;
+  for (let i = 0; i < numberGuests; i++) {
+    let guestID = guestList[i].id;
+    let guest1FN = guestList[i].g1_first + " " + guestList[i].g1_last;
+    let guest2FN = guestList[i].g2_first + " " + guestList[i].g2_last;
+    let rd_invite = guestList[i].rd_invite;
+    let wp_invite = guestList[i].wp_invite;
+    let c_invite = guestList[i].c_invite;
+    console.log(guestID);
+    console.log(guest1FN);
+    console.log(guest2FN);
+    console.log(rd_invite);
+    console.log(wp_invite);
+    console.log(c_invite);
+  }
