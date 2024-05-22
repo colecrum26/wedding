@@ -8,16 +8,17 @@ export default function RSVPSearch() {
   // const [guestNames, setGuestNames] = useState([]);
   const [showComponent, setShowComponent] = useState(false);
 
-  // async function searchGuest() {
-  //   try {
-  //     let response = await fetch("url-goes-here");
-  //     let result = await response.json();
-  //     setGuestList(result);
-  //   }
-  //   catch(err) {
-  //     alert(err);
-  //   }
-  // }
+  async function searchGuest() {
+    try {
+      let response = await fetch("http://localhost:5553/api/guests");
+      let result = await response.json();
+      console.log(result);
+      // setGuestList(result);
+    }
+    catch(err) {
+      alert(err);
+    }
+  }
 
   function handleClick() {
     // if (guestList includes guestName => {})
@@ -27,9 +28,9 @@ export default function RSVPSearch() {
 
   // let guests = getListOf(list, "guest1");
 
-  // useEffect(() => {
-  //   searchGuest();
-  // }, []);
+  useEffect(() => {
+    searchGuest();
+  }, []);
 
   return (
     <div>
