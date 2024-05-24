@@ -5,8 +5,11 @@ import RSVPRespond from "../components/rsvp.respond";
 
 export default function RSVPSearch() {
   const [guestList, setGuestList] = useState([]);
-  // const [searchedParty, setSearchedParty] = useState([]);
+  const [searchedParty, setSearchedParty] = useState("");
   const [showComponent, setShowComponent] = useState(false);
+
+  console.log(guestList);
+  console.log(searchedParty);
 
   async function searchGuest() {
     try {
@@ -19,11 +22,14 @@ export default function RSVPSearch() {
     }
   }
 
-
-  function handleClick() {
-    // if (guestList includes guestName => {})
-    setShowComponent(true);
-    // else => "We cannot find your name." etc etc
+  function handleSearch(e) {
+    e.preventDefault();
+    if (guestList.includes(searchedParty)) {
+      console.log("Success");
+      setShowComponent(true);
+    } else {
+      console.log("Sorry, no invite");
+    }
   }
 
   useEffect(() => {
@@ -39,12 +45,18 @@ export default function RSVPSearch() {
           Please enter the first and last name of one member of your party
           below. You'll be able to RSVP for you and a guest (or your family).
         </p>
-        <input type="text" />
-        <span>
-          E.g. Johnny Appleseed, (not The Appleseeds or Mr. and Mrs. Appleseed)
-        </span>
-        <button onClick={handleClick}>Continue</button>
-        <div>{showComponent && <RSVPRespond guests={guestList} />}</div>
+        <form action="" >
+          <input
+            type="text"
+            onChange={(e) => {setSearchedParty(e.target.value)}}
+          />
+          <span>
+            E.g. Johnny Appleseed, (not The Appleseeds or Mr. and Mrs.
+            Appleseed)
+          </span>
+          <button onClick={handleSearch}>Continue</button>
+          <div>{showComponent && <RSVPRespond guests={guestList} />}</div>
+        </form>
       </div>
     </div>
   );
