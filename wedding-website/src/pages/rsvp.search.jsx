@@ -25,6 +25,7 @@ export default function RSVPSearch() {
   function handleSearch(e) {
     e.preventDefault();
     // reevaluate loop
+    // if g2f/l is blank, don't include
     for (let party of guestList) {
       if (`${party.g1_first} ${party.g1_last}` === searchedName ||
           `${party.g2_first} ${party.g2_last}` === searchedName
@@ -68,7 +69,7 @@ export default function RSVPSearch() {
             </span>
           </div>
           <div className="form-el-wrapper wbtn">
-            <button className="rsvp-searchbtn" onClick={handleSearch}>Continue</button>
+            <button className="rsvp-classbtn" onClick={handleSearch}>Continue</button>
           </div>
           <div>{showComponent && <RSVPRespond guests={guestList} party={guestParty} />}</div>
         </form>

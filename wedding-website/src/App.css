@@ -91,14 +91,14 @@ li {
   list-style: none;
 }
 
-.rsvp-searchbtn {
+.rsvp-classbtn {
   background-color: var(--accent-darkGreen);
   color: white;
   padding: 5px 20px;
   border-radius: 3px;
   font-size: 18px;
 }
-.rsvp-searchbtn:hover {
+.rsvp-classbtn:hover {
   border: 1px solid var(--accent-darkerGreen);
   background-color: var(--accent-darkGreen-overlay);
   cursor: pointer;

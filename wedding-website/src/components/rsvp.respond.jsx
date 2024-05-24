@@ -3,25 +3,37 @@ import { useEffect, useState } from "react";
 export default function RSVPRespond({guests, party}) {
   const [guest1RSVP, setGuest1RSVP] = useState("");
   const [guest2RSVP, setGuest2RSVP] = useState("");
+  const [refinedParty, setRefinedParty] = useState([]);
 
-  console.log(guests);
-  console.log(party);
+  function checkBlank() {
+    if (party[1] === " ") {
+      setRefinedParty((party.slice(0, 1)));
+    } else {
+      setRefinedParty(party);
+    }
+  }
 
-  const guestNames = party.map((guest) => {
-    console.log(guest);
-    console.log(party[0]);
-    if (party.length > 1) {
+  useEffect(() => {
+    checkBlank();
+  }, []);
+
+  const guestNames = refinedParty.map((guest) => {
+    if (refinedParty.length > 1) {
     return (
-      <div>
+      <div className="guest-rsvp-container">
         <p>{guest}</p>
+        {/* two rows per event (Y/N) */}
         <input type="checkbox" name="" id="" />
         <input type="checkbox" name="" id="" />
         <input type="checkbox" name="" id="" />
       </div>
     )} else {
       return (
-        <div>
+        <div className="guest-rsvp-container">
           <p>{guest}</p>
+          <input type="checkbox" name="" id="" />
+          <input type="checkbox" name="" id="" />
+          <input type="checkbox" name="" id="" />
         </div>
       )
     }
@@ -55,7 +67,7 @@ export default function RSVPRespond({guests, party}) {
           <input type="checkbox" name="rsvp-yes"/>
           <label htmlFor="rsvp-no">Will Not Attend</label>
           <input type="checkbox" name="rsvp-no"/> */}
-          <button>Confirm RSVP</button>
+          <button className="rsvp-classbtn">Confirm RSVP</button>
           </form>
       </div>
     </div>
