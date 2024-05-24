@@ -7,13 +7,25 @@ export default function RSVPRespond({guests, party}) {
   console.log(guests);
   console.log(party);
 
-
-  // async function populateGuest() {
-  //   return await guests.map((guest) => {
-  //     setGuest1(guest.g1_first + " " + guest.g1_last);
-  //     console.log(guest1);
-  //   })
-  // }
+  const guestNames = party.map((guest) => {
+    console.log(guest);
+    console.log(party[0]);
+    if (party.length > 1) {
+    return (
+      <div>
+        <p>{guest}</p>
+        <input type="checkbox" name="" id="" />
+        <input type="checkbox" name="" id="" />
+        <input type="checkbox" name="" id="" />
+      </div>
+    )} else {
+      return (
+        <div>
+          <p>{guest}</p>
+        </div>
+      )
+    }
+  })
 
   function confirmRSVP(e) {
     e.preventDefault();
@@ -25,17 +37,12 @@ export default function RSVPRespond({guests, party}) {
     // send response(s) to RSVP table
   }
 
-
-  // useEffect(() => {
-  //   populateGuest();
-  // }, []);
-
   return (
     <div className="page-container">
       <div className="content-wrapper">
         <form onSubmit={confirmRSVP}>
           
-
+          {guestNames}
 
           
           {/* <p>name 1</p>

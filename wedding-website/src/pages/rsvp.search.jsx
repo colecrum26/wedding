@@ -30,8 +30,9 @@ export default function RSVPSearch() {
           `${party.g2_first} ${party.g2_last}` === searchedName
       ) {
         console.log("Success");
-        setGuestParty([`${party.g1_first} ${party.g1_last}, ${party.g2_first} ${party.g2_last}`]);
+        setGuestParty([`${party.g1_first} ${party.g1_last}`, `${party.g2_first} ${party.g2_last}`]);
         setShowComponent(true);
+        break;
       } else {
         console.log("Sorry, no invite")
       }
