@@ -1,8 +1,6 @@
 import { useEffect, useState } from "react";
 
 export default function RSVPRespond({guests}) {
-  const [guest1, setGuest1] = useState("");
-  const [guest2, setGuest2] = useState("");
   const [guest1RSVP, setGuest1RSVP] = useState("");
   const [guest2RSVP, setGuest2RSVP] = useState("");
 

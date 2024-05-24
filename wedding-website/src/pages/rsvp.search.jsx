@@ -5,11 +5,13 @@ import RSVPRespond from "../components/rsvp.respond";
 
 export default function RSVPSearch() {
   const [guestList, setGuestList] = useState([]);
-  const [searchedParty, setSearchedParty] = useState("");
+  const [searchedName, setSearchedName] = useState("");
+  const [guestParty, setGuestParty] = useState([]);
+  const [guest1, setGuest1] = useState([]);
+  const [guest2, setGuest2] = useState("");
   const [showComponent, setShowComponent] = useState(false);
 
   console.log(guestList);
-  console.log(searchedParty);
 
   async function searchGuest() {
     try {
@@ -22,13 +24,25 @@ export default function RSVPSearch() {
     }
   }
 
+  function createParties() {
+    for (let party of guestList) {
+      console.log(party.g1_first);
+    }
+  }
+
+
   function handleSearch(e) {
     e.preventDefault();
-    if (guestList.includes(searchedParty)) {
-      console.log("Success");
-      setShowComponent(true);
-    } else {
-      console.log("Sorry, no invite");
+    // reevaluate loop
+    for (let party of guestList) {
+      if (party.g1_first + " " + party.g1_last === searchedName ||
+          party.g2_first + " " + party.g2_last === searchedName
+      ) {
+        console.log("Success");
+        setShowComponent(true);
+      } else {
+        console.log("Sorry, no invite")
+      }
     }
   }
 
@@ -46,15 +60,21 @@ export default function RSVPSearch() {
           below. You'll be able to RSVP for you and a guest (or your family).
         </p>
         <form action="" >
-          <input
-            type="text"
-            onChange={(e) => {setSearchedParty(e.target.value)}}
-          />
-          <span>
-            E.g. Johnny Appleseed, (not The Appleseeds or Mr. and Mrs.
-            Appleseed)
-          </span>
-          <button onClick={handleSearch}>Continue</button>
+          <div className="form-el-wrapper">
+            <input
+              type="text"
+              onChange={(e) => {setSearchedName(e.target.value)}}
+            />
+          </div>
+          <div className="form-el-wrapper">
+            <span>
+              E.g. Johnny Appleseed, (not The Appleseeds or Mr. and Mrs.
+              Appleseed)
+            </span>
+          </div>
+          <div className="form-el-wrapper wbtn">
+            <button className="rsvp-searchbtn" onClick={handleSearch}>Continue</button>
+          </div>
           <div>{showComponent && <RSVPRespond guests={guestList} />}</div>
         </form>
       </div>

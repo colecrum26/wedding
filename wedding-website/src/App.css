@@ -91,6 +91,19 @@ li {
   list-style: none;
 }
 
+.rsvp-searchbtn {
+  background-color: var(--accent-darkGreen);
+  color: white;
+  padding: 5px 20px;
+  border-radius: 3px;
+  font-size: 18px;
+}
+.rsvp-searchbtn:hover {
+  border: 1px solid var(--accent-darkerGreen);
+  background-color: var(--accent-darkGreen-overlay);
+  cursor: pointer;
+}
+
 .content-wrapper {
   width: 100%;
   margin: 40px 0;
@@ -101,6 +114,13 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
+}
+
+.form-el-wrapper {
+  margin: 2px 0;
+}
+.form-el-wrapper.wbtn {
+  margin: 16px 0;
 }
 
 .general-info {
