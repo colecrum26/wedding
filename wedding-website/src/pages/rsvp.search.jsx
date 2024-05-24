@@ -7,8 +7,6 @@ export default function RSVPSearch() {
   const [guestList, setGuestList] = useState([]);
   const [searchedName, setSearchedName] = useState("");
   const [guestParty, setGuestParty] = useState([]);
-  const [guest1, setGuest1] = useState([]);
-  const [guest2, setGuest2] = useState("");
   const [showComponent, setShowComponent] = useState(false);
 
   console.log(guestList);
@@ -24,27 +22,23 @@ export default function RSVPSearch() {
     }
   }
 
-  function createParties() {
-    for (let party of guestList) {
-      console.log(party.g1_first);
-    }
-  }
-
-
   function handleSearch(e) {
     e.preventDefault();
     // reevaluate loop
     for (let party of guestList) {
-      if (party.g1_first + " " + party.g1_last === searchedName ||
-          party.g2_first + " " + party.g2_last === searchedName
+      if (`${party.g1_first} ${party.g1_last}` === searchedName ||
+          `${party.g2_first} ${party.g2_last}` === searchedName
       ) {
         console.log("Success");
+        setGuestParty([`${party.g1_first} ${party.g1_last}, ${party.g2_first} ${party.g2_last}`]);
         setShowComponent(true);
       } else {
         console.log("Sorry, no invite")
       }
     }
   }
+
+  console.log(guestParty);
 
   useEffect(() => {
     searchGuest();
@@ -75,7 +69,7 @@ export default function RSVPSearch() {
           <div className="form-el-wrapper wbtn">
             <button className="rsvp-searchbtn" onClick={handleSearch}>Continue</button>
           </div>
-          <div>{showComponent && <RSVPRespond guests={guestList} />}</div>
+          <div>{showComponent && <RSVPRespond guests={guestList} party={guestParty} />}</div>
         </form>
       </div>
     </div>

@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
 
-export default function RSVPRespond({guests}) {
+export default function RSVPRespond({guests, party}) {
   const [guest1RSVP, setGuest1RSVP] = useState("");
   const [guest2RSVP, setGuest2RSVP] = useState("");
 
   console.log(guests);
+  console.log(party);
 
 
   // async function populateGuest() {
