@@ -136,6 +136,7 @@ li {
 .faux {
   background-color: var(--accent-darkGreen);
   color: white !important;
+  font-weight: 700;
   padding: 5px 20px;
   border-radius: 2px;
   box-shadow: 1.1px 1px 2px var(--accent-darkerGreen);
@@ -183,7 +184,6 @@ li {
 
 .activities {
   max-width: 600px;
-  margin: 12px;
 }
 .activities p {
   margin: 12px;
@@ -208,7 +208,9 @@ li {
 }
 
 .instructions {
-  font-size: 18px; 
+  width: 800px;
+  text-align: center;
+  margin: 8px;
 }
 
 .question {

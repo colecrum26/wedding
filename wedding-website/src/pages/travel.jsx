@@ -1,4 +1,5 @@
 import Header from "../components/header";
+import RSVPButton from "../components/rsvpBtn";
 import { NavLink } from "react-router-dom";
 
 export default function Travel() {
@@ -66,6 +67,7 @@ export default function Travel() {
           </NavLink>
         </div>
       </div>
+      <RSVPButton />
     </div>
   );
 }

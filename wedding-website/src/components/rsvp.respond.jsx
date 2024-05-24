@@ -53,20 +53,7 @@ export default function RSVPRespond({guests, party}) {
     <div className="page-container">
       <div className="content-wrapper">
         <form onSubmit={confirmRSVP}>
-          
           {guestNames}
-
-          
-          {/* <p>name 1</p>
-          <label htmlFor="rsvp-yes">Attending</label>
-          <input type="checkbox" name="rsvp-yes" id="" />
-          <label htmlFor="rsvp-no">Will Not Attend</label>
-          <input type="checkbox" name="rsvp-no" id="" />
-          <p>name 2</p>
-          <label htmlFor="rsvp-yes">Attending</label>
-          <input type="checkbox" name="rsvp-yes"/>
-          <label htmlFor="rsvp-no">Will Not Attend</label>
-          <input type="checkbox" name="rsvp-no"/> */}
           <button className="rsvp-classbtn">Confirm RSVP</button>
           </form>
       </div>

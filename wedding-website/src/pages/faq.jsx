@@ -1,4 +1,5 @@
 import Header from "../components/header";
+import RSVPButton from "../components/rsvpBtn";
 
 export default function FAQ() {
   return (
@@ -47,6 +48,7 @@ export default function FAQ() {
           </p>
         </div>
       </div>
+      <RSVPButton />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import Header from "../components/header";
+import RSVPButton from "../components/rsvpBtn";
 
 export default function WeddingParty() {
   return (
@@ -42,6 +43,7 @@ export default function WeddingParty() {
           </ul>
         </div>
       </div>
+      <RSVPButton />
     </div>
   );
 }

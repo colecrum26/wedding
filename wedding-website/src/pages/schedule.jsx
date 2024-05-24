@@ -1,4 +1,5 @@
 import Header from "../components/header";
+import RSVPButton from "../components/rsvpBtn";
 
 export default function Schedule() {
   return (
@@ -61,6 +62,7 @@ export default function Schedule() {
           </a>
         </div>
       </div>
+      <RSVPButton />
     </div>
   );
 }

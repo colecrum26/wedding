@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-// import useNavigate;
 import Header from "../components/header";
 import RSVPRespond from "../components/rsvp.respond";
 
@@ -25,7 +24,6 @@ export default function RSVPSearch() {
   function handleSearch(e) {
     e.preventDefault();
     // reevaluate loop
-    // if g2f/l is blank, don't include
     for (let party of guestList) {
       if (`${party.g1_first} ${party.g1_last}` === searchedName ||
           `${party.g2_first} ${party.g2_last}` === searchedName
@@ -53,8 +51,9 @@ export default function RSVPSearch() {
       <div className="rsvp-dialogue">
         <p className="instructions">
           Please enter the first and last name of one member of your party
-          below. You'll be able to RSVP for you and a guest (or your family).
+          below. 
         </p>
+        <p className="instructions">You'll be able to RSVP for you and a guest (or your family).</p>
         <form action="" >
           <div className="form-el-wrapper">
             <input
