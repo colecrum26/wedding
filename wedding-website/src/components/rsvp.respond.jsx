@@ -21,16 +21,20 @@ export default function RSVPRespond({guests, party}) {
     if (refinedParty.length > 1) {
     return (
       <div className="guest-rsvp-container">
-        <p>{guest}</p>
-        {/* two rows per event (Y/N) */}
-        <input type="checkbox" name="" id="" />
-        <input type="checkbox" name="" id="" />
-        <input type="checkbox" name="" id="" />
+        <p><strong>{guest}</strong></p>
+        {/* need logic to only display which events invited to */}
+        <div className="event-attendance">
+          <p>Rehearsal Dinner</p>
+          <label htmlFor="">Will Attend</label>
+        <input type="checkbox" name="y-wp" id="" />
+        <label htmlFor="">Will Not Attend</label>
+        <input type="checkbox" name="n-wp" id="" />
+        </div>
       </div>
     )} else {
       return (
         <div className="guest-rsvp-container">
-          <p>{guest}</p>
+          <p><strong>{guest}</strong></p>
           <input type="checkbox" name="" id="" />
           <input type="checkbox" name="" id="" />
           <input type="checkbox" name="" id="" />
