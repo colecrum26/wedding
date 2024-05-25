@@ -19,12 +19,20 @@ export default function RSVPRespond({guests, party, invites}) {
     checkBlank();
   }, []); 
 
+  const guestInvites = invites.map((occ) => {
+    // refine logic of this render
+    if (invites[0] === "Y" && invites[1] === "Y" && invites[2] === "Y") {
+    return (
+      <p>test</p>
+    );
+  }
+  })
+
   const guestNames = refinedParty.map((guest) => {
     if (refinedParty.length > 1) {
     return (
       <div className="guest-rsvp-container">
         <p><strong>{guest}</strong></p>
-        {/* need logic to only display which events invited to */}
         <div className="event-attendance">
           <p>Rehearsal Dinner</p>
           <label htmlFor="">Will Attend</label>
@@ -32,6 +40,7 @@ export default function RSVPRespond({guests, party, invites}) {
         <label htmlFor="">Will Not Attend</label>
         <input type="checkbox" name="n-wp" id="" />
         </div>
+        {guestInvites}
       </div>
     )} else {
       return (
