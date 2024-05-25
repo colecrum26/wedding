@@ -6,9 +6,8 @@ export default function RSVPSearch() {
   const [guestList, setGuestList] = useState([]);
   const [searchedName, setSearchedName] = useState("");
   const [guestParty, setGuestParty] = useState([]);
+  const [partyInvites, setPartyInvites] = useState([]);
   const [showComponent, setShowComponent] = useState(false);
-
-  console.log(guestList);
 
   async function searchGuest() {
     try {
@@ -30,6 +29,7 @@ export default function RSVPSearch() {
       ) {
         console.log("Success");
         setGuestParty([`${party.g1_first} ${party.g1_last}`, `${party.g2_first} ${party.g2_last}`]);
+        setPartyInvites([`${party.rd_invite}`, `${party.wp_invite}`, `${party.c_invite}`])
         setShowComponent(true);
         break;
       } else {
@@ -70,7 +70,7 @@ export default function RSVPSearch() {
           <div className="form-el-wrapper wbtn">
             <button className="rsvp-classbtn" onClick={handleSearch}>Continue</button>
           </div>
-          <div>{showComponent && <RSVPRespond guests={guestList} party={guestParty} />}</div>
+          <div>{showComponent && <RSVPRespond guests={guestList} party={guestParty} invites={partyInvites} />}</div>
         </form>
       </div>
     </div>

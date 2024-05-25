@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 
-export default function RSVPRespond({guests, party}) {
+export default function RSVPRespond({guests, party, invites}) {
   const [guest1RSVP, setGuest1RSVP] = useState("");
   const [guest2RSVP, setGuest2RSVP] = useState("");
   const [refinedParty, setRefinedParty] = useState([]);
+
+  console.log(invites);
 
   function checkBlank() {
     if (party[1] === " ") {
@@ -15,7 +17,7 @@ export default function RSVPRespond({guests, party}) {
 
   useEffect(() => {
     checkBlank();
-  }, []);
+  }, []); 
 
   const guestNames = refinedParty.map((guest) => {
     if (refinedParty.length > 1) {
