@@ -8,6 +8,7 @@ export default function RSVPSearch() {
   const [guestParty, setGuestParty] = useState([]);
   // maybe refactor into object to get key & value vs just value
   const [partyInvites, setPartyInvites] = useState([]);
+  const [partyObj, setPartyObj] = useState({});
   const [showComponent, setShowComponent] = useState(false);
 
   async function searchGuest() {
@@ -29,8 +30,9 @@ export default function RSVPSearch() {
           `${party.g2_first} ${party.g2_last}` === searchedName
       ) {
         console.log("Success");
+        // check here to get rid of blank prior to response render
         setGuestParty([`${party.g1_first} ${party.g1_last}`, `${party.g2_first} ${party.g2_last}`]);
-        setPartyInvites([`${party.rd_invite}`, `${party.wp_invite}`, `${party.c_invite}`])
+        setPartyInvites([`${party.rd_invite}`, `${party.wp_invite}`, `${party.c_invite}`]);
         setShowComponent(true);
         break;
       } else {
