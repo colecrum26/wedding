@@ -77,6 +77,7 @@ export default function RSVPSearch() {
           </div>
           <div>{showComponent && <RSVPRespond partyObj={partyObj} guestObj={guestObj} />}</div>
         </form>
+        <p>For questions or concerns, please contact the couple directly.</p>
       </div>
     </div>
   );

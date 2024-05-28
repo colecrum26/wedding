@@ -7,7 +7,7 @@ export default function Home() {
     <div className="page-container">
       <Header />
       <div className="content-wrapper">
-        <img src="" alt="our best look" />
+        {/* <img src="" alt="our best look" /> */}
         <div className="info-container">
           <div className="general-info">
             <h1 className="header-main">REBECCA NORWOOD</h1>

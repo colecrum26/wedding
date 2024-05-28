@@ -9,32 +9,6 @@ export default function ThingsToDo() {
       <div className="content-wrapper">
         <div className="activities">
           <h1 className="header-main">
-            PATTERSON <br />
-            KITCHEN + BAR
-          </h1>
-          <a
-            href="https://maps.app.goo.gl/yV5P16LvpHpnJhmw8"
-            className="address-link"
-            target="_blank"
-            rel="noreferrer"
-          >
-            110 Halston Avenue, Greenville, SC 29615
-          </a>
-          <p>
-            A contemporary American restaurant with Southern and International
-            influences. Reservation required.
-          </p>
-          <NavLink
-            className="faux"
-            to="https://www.hotelhartness.com/experiences/dine"
-            target="_blank"
-            rel="noreferrer"
-          >
-            View
-          </NavLink>
-        </div>
-        <div className="activities">
-          <h1 className="header-main">
             THE CAPTAIN <br />
             AT HOTEL HARTNESS
           </h1>
