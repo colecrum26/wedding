@@ -6,9 +6,10 @@ export default function RSVPSearch() {
   const [guestList, setGuestList] = useState([]);
   const [searchedName, setSearchedName] = useState("");
   const [guestParty, setGuestParty] = useState([]);
-  // maybe refactor into object to get key & value vs just value
   const [partyInvites, setPartyInvites] = useState([]);
+  const [guestObj, setGuestObj] = useState({});
   const [partyObj, setPartyObj] = useState({});
+  const [partyArr, setPartyArr] = useState([]);
   const [showComponent, setShowComponent] = useState(false);
 
   async function searchGuest() {
@@ -27,10 +28,24 @@ export default function RSVPSearch() {
     // reevaluate loop
     for (let party of guestList) {
       if (`${party.g1_first} ${party.g1_last}` === searchedName ||
-          `${party.g2_first} ${party.g2_last}` === searchedName
-      ) {
+          `${party.g2_first} ${party.g2_last}` === searchedName )
+       {
         console.log("Success");
-        // check here to get rid of blank prior to response render
+        setGuestObj({
+          guest1Name: `${party.g1_first} ${party.g1_last}`,
+          guest2Name: `${party.g2_first} ${party.g2_last}`
+        })
+        setPartyObj({
+          rd_invite: `${party.rd_invite}`,
+          wp_invite: `${party.wp_invite}`,
+          c_invite: `${party.c_invite}`
+        });
+        setPartyArr([`${party.g1_first} ${party.g1_last}`, 
+                     `${party.g2_first} ${party.g2_last}`,
+                     `${party.rd_invite}`,
+                     `${party.wp_invite}`,
+                     `${party.c_invite}`
+                    ])
         setGuestParty([`${party.g1_first} ${party.g1_last}`, `${party.g2_first} ${party.g2_last}`]);
         setPartyInvites([`${party.rd_invite}`, `${party.wp_invite}`, `${party.c_invite}`]);
         setShowComponent(true);
@@ -41,7 +56,8 @@ export default function RSVPSearch() {
     }
   }
 
-  console.log(guestParty);
+  console.log(partyObj);
+  console.log(partyArr);
 
   useEffect(() => {
     searchGuest();
@@ -73,7 +89,7 @@ export default function RSVPSearch() {
           <div className="form-el-wrapper wbtn">
             <button className="rsvp-classbtn" onClick={handleSearch}>Continue</button>
           </div>
-          <div>{showComponent && <RSVPRespond guests={guestList} party={guestParty} invites={partyInvites} />}</div>
+          <div>{showComponent && <RSVPRespond partyObj={partyObj} guestObj={guestObj} partyArr={partyArr} guests={guestParty} invites={partyInvites} />}</div>
         </form>
       </div>
     </div>

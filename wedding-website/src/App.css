@@ -65,7 +65,7 @@ form {
   align-items: center;
 }
 input {
-
+  width: inherit;
 }
 
 p {
