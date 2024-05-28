@@ -5,8 +5,6 @@ import RSVPRespond from "../components/rsvp.respond";
 export default function RSVPSearch() {
   const [guestList, setGuestList] = useState([]);
   const [searchedName, setSearchedName] = useState("");
-  const [guestParty, setGuestParty] = useState([]);
-  const [partyInvites, setPartyInvites] = useState([]);
   const [guestObj, setGuestObj] = useState({});
   const [partyObj, setPartyObj] = useState([{}]);
   const [showComponent, setShowComponent] = useState(false);
@@ -43,8 +41,6 @@ export default function RSVPSearch() {
           wp_invite: `${party.wp_invite}`,
           c_invite: `${party.c_invite}`
         }]);
-        setGuestParty([`${party.g1_first} ${party.g1_last}`, `${party.g2_first} ${party.g2_last}`]);
-        setPartyInvites([`${party.rd_invite}`, `${party.wp_invite}`, `${party.c_invite}`]);
         setShowComponent(true);
         break;
       } else {

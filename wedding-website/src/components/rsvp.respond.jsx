@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function RSVPRespond({ partyObj, guestObj, guests, invites }) {
+export default function RSVPRespond({ partyObj, guestObj }) {
   const [guest1RSVP, setGuest1RSVP] = useState("");
   const [guest2RSVP, setGuest2RSVP] = useState("");
 
@@ -9,13 +9,35 @@ export default function RSVPRespond({ partyObj, guestObj, guests, invites }) {
   console.log(partyObj[0].rd_invite);
 
   const guestInvites = partyObj.map(() => {
-    // work on this function - evaluate whether to just make one for names + invites
     if (
-      partyObj[0].rd_invite === "Y" &&
+      partyObj[0].rd_invite === "N" &&
+      partyObj[0].wp_invite === "Y" &&
+      partyObj[0].c_invite === "Y" &&
+      guestObj.guest2Name === ""
+    ) {
+      return (
+        <div>
+          <p>{guestObj.guest1Name}</p>
+        </div>
+      );
+    } else if (
+      partyObj[0].rd_invite === "N" &&
       partyObj[0].wp_invite === "Y" &&
       partyObj[0].c_invite === "Y"
     ) {
-      return <p>BOOYAH</p>;
+      return (
+        <div>
+        <p>{guestObj.guest1Name}</p>
+        <p>{guestObj.guest2Name}</p>
+        </div>
+      )
+    } else {
+      return (
+        <div>
+          <p>{guestObj.guest1Name}</p>
+          <p>{guestObj.guest2Name}</p>
+        </div>
+      )
     }
   });
 
