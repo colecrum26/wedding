@@ -8,8 +8,7 @@ export default function RSVPSearch() {
   const [guestParty, setGuestParty] = useState([]);
   const [partyInvites, setPartyInvites] = useState([]);
   const [guestObj, setGuestObj] = useState({});
-  const [partyObj, setPartyObj] = useState({});
-  const [partyArr, setPartyArr] = useState([]);
+  const [partyObj, setPartyObj] = useState([{}]);
   const [showComponent, setShowComponent] = useState(false);
 
   async function searchGuest() {
@@ -23,6 +22,10 @@ export default function RSVPSearch() {
     }
   }
 
+  useEffect(() => {
+    searchGuest();
+  }, []);
+
   function handleSearch(e) {
     e.preventDefault();
     // reevaluate loop
@@ -35,17 +38,11 @@ export default function RSVPSearch() {
           guest1Name: `${party.g1_first} ${party.g1_last}`,
           guest2Name: `${party.g2_first} ${party.g2_last}`
         })
-        setPartyObj({
+        setPartyObj([{
           rd_invite: `${party.rd_invite}`,
           wp_invite: `${party.wp_invite}`,
           c_invite: `${party.c_invite}`
-        });
-        setPartyArr([`${party.g1_first} ${party.g1_last}`, 
-                     `${party.g2_first} ${party.g2_last}`,
-                     `${party.rd_invite}`,
-                     `${party.wp_invite}`,
-                     `${party.c_invite}`
-                    ])
+        }]);
         setGuestParty([`${party.g1_first} ${party.g1_last}`, `${party.g2_first} ${party.g2_last}`]);
         setPartyInvites([`${party.rd_invite}`, `${party.wp_invite}`, `${party.c_invite}`]);
         setShowComponent(true);
@@ -57,11 +54,8 @@ export default function RSVPSearch() {
   }
 
   console.log(partyObj);
-  console.log(partyArr);
 
-  useEffect(() => {
-    searchGuest();
-  }, []);
+
 
   return (
     <div>
@@ -89,7 +83,7 @@ export default function RSVPSearch() {
           <div className="form-el-wrapper wbtn">
             <button className="rsvp-classbtn" onClick={handleSearch}>Continue</button>
           </div>
-          <div>{showComponent && <RSVPRespond partyObj={partyObj} guestObj={guestObj} partyArr={partyArr} guests={guestParty} invites={partyInvites} />}</div>
+          <div>{showComponent && <RSVPRespond partyObj={partyObj} guestObj={guestObj} />}</div>
         </form>
       </div>
     </div>

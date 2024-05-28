@@ -1,28 +1,23 @@
 import { useEffect, useState } from "react";
 
-export default function RSVPRespond({ partyObj, guestObj, partyArr, guests, invites }) {
+export default function RSVPRespond({ partyObj, guestObj, guests, invites }) {
   const [guest1RSVP, setGuest1RSVP] = useState("");
   const [guest2RSVP, setGuest2RSVP] = useState("");
 
   console.log(guestObj);
   console.log(partyObj);
+  console.log(partyObj[0].rd_invite);
 
-  const guestInvites = () => {
-    console.log(partyObj.rd_invite);
-    if (partyObj.rd_invite === "N") {
-      return (
-        <div>
-          <p>FINALLY</p>
-        </div>
-      )
-    } else {
-      console.log("keep trying");
+  const guestInvites = partyObj.map(() => {
+    // work on this function - evaluate whether to just make one for names + invites
+    if (
+      partyObj[0].rd_invite === "Y" &&
+      partyObj[0].wp_invite === "Y" &&
+      partyObj[0].c_invite === "Y"
+    ) {
+      return <p>BOOYAH</p>;
     }
-  } 
-
-  useEffect(() => {
-    guestInvites();
-  }, []);
+  });
 
   // const guestInvites = invites.map((occ) => {
   //   // refine logic of this render
