@@ -1,23 +1,42 @@
 import { useEffect, useState } from "react";
+import "../style/rsvp.respond.css";
 
 export default function RSVPRespond({ partyObj, guestObj }) {
   const [guest1RSVP, setGuest1RSVP] = useState("");
   const [guest2RSVP, setGuest2RSVP] = useState("");
-
-  console.log(guestObj);
-  console.log(partyObj);
-  console.log(partyObj[0].rd_invite);
 
   const guestInvites = partyObj.map(() => {
     if (
       partyObj[0].rd_invite === "N" &&
       partyObj[0].wp_invite === "Y" &&
       partyObj[0].c_invite === "Y" &&
-      guestObj.guest2Name === ""
+      guestObj.guest2Name === " "
     ) {
       return (
-        <div>
-          <p>{guestObj.guest1Name}</p>
+        <div className="guest-invite-container">
+          <p>
+            <strong>{guestObj.guest1Name}</strong>
+          </p>
+          <div className="event-attendance-container">
+            <div className="ind-event">
+              <p>Welcome Party</p>
+              <div className="rsvp-checkboxes">
+                <label htmlFor="">Will Attend</label>
+                <input type="checkbox" name="y-wp" id="" />
+                <label htmlFor="">Will Not Attend</label>
+                <input type="checkbox" name="n-wp" id="" />
+              </div>
+            </div>
+            <div className="ind-event">
+              <p>Ceremony</p>
+              <div className="rsvp-checkboxes">
+                <label htmlFor="">Will Attend</label>
+                <input type="checkbox" name="y-c" id="" />
+                <label htmlFor="">Will Not Attend</label>
+                <input type="checkbox" name="n-c" id="" />
+              </div>
+            </div>
+          </div>
         </div>
       );
     } else if (
@@ -26,52 +45,126 @@ export default function RSVPRespond({ partyObj, guestObj }) {
       partyObj[0].c_invite === "Y"
     ) {
       return (
-        <div>
-        <p>{guestObj.guest1Name}</p>
-        <p>{guestObj.guest2Name}</p>
+        <div className="guest-invite-container">
+          <p>
+            <strong>{guestObj.guest1Name}</strong>
+          </p>
+          <div className="event-attendance-container">
+            <div className="ind-event">
+              <p>Welcome Party</p>
+              <div className="rsvp-checkboxes">
+                <label htmlFor="">Will Attend</label>
+                <input type="checkbox" name="y-wp" id="" />
+                <label htmlFor="">Will Not Attend</label>
+                <input type="checkbox" name="n-wp" id="" />
+              </div>
+            </div>
+            <div className="ind-event">
+              <p>Ceremony</p>
+              <div className="rsvp-checkboxes">
+                <label htmlFor="">Will Attend</label>
+                <input type="checkbox" name="y-c" id="" />
+                <label htmlFor="">Will Not Attend</label>
+                <input type="checkbox" name="n-c" id="" />
+              </div>
+            </div>
+          </div>
+          <p>
+            <strong>{guestObj.guest2Name}</strong>
+          </p>
+          <div className="event-attendance-container">
+            <div className="ind-event">
+              <p>Welcome Party</p>
+              <div className="rsvp-checkboxes">
+                <label htmlFor="">Will Attend</label>
+                <input type="checkbox" name="y-wp" id="" />
+                <label htmlFor="">Will Not Attend</label>
+                <input type="checkbox" name="n-wp" id="" />
+              </div>
+            </div>
+            <div className="ind-event">
+              <p>Ceremony</p>
+              <div className="rsvp-checkboxes">
+                <label htmlFor="">Will Attend</label>
+                <input type="checkbox" name="y-c" id="" />
+                <label htmlFor="">Will Not Attend</label>
+                <input type="checkbox" name="n-c" id="" />
+              </div>
+            </div>
+          </div>
         </div>
-      )
+      );
     } else {
       return (
-        <div>
-          <p>{guestObj.guest1Name}</p>
-          <p>{guestObj.guest2Name}</p>
+        <div className="guest-invite-container">
+          <p>
+            <strong>{guestObj.guest1Name}</strong>
+          </p>
+          <div className="event-attendance-container">
+            <div className="ind-event">
+              <p>Rehearsal Dinner</p>
+              <div className="rsvp-checkboxes">
+                <label htmlFor="">Will Attend</label>
+                <input type="checkbox" name="y-rd" id="" />
+                <label htmlFor="">Will Not Attend</label>
+                <input type="checkbox" name="n-rd" id="" />
+              </div>
+            </div>
+            <div className="ind-event">
+              <p>Welcome Party</p>
+              <div className="rsvp-checkboxes">
+                <label htmlFor="">Will Attend</label>
+                <input type="checkbox" name="y-wp" id="" />
+                <label htmlFor="">Will Not Attend</label>
+                <input type="checkbox" name="n-wp" id="" />
+              </div>
+            </div>
+            <div className="ind-event">
+              <p>Ceremony</p>
+              <div className="rsvp-checkboxes">
+                <label htmlFor="">Will Attend</label>
+                <input type="checkbox" name="y-c" id="" />
+                <label htmlFor="">Will Not Attend</label>
+                <input type="checkbox" name="n-c" id="" />
+              </div>
+            </div>
+          </div>
+          <p>
+            <strong>{guestObj.guest2Name}</strong>
+          </p>
+          <div className="event-attendance-container">
+            <div className="ind-event">
+              <p>Rehearsal Dinner</p>
+              <div className="rsvp-checkboxes">
+                <label htmlFor="">Will Attend</label>
+                <input type="checkbox" name="y-rd" id="" />
+                <label htmlFor="">Will Not Attend</label>
+                <input type="checkbox" name="n-rd" id="" />
+              </div>
+            </div>
+            <div className="ind-event">
+              <p>Welcome Party</p>
+              <div className="rsvp-checkboxes">
+                <label htmlFor="">Will Attend</label>
+                <input type="checkbox" name="y-wp" id="" />
+                <label htmlFor="">Will Not Attend</label>
+                <input type="checkbox" name="n-wp" id="" />
+              </div>
+            </div>
+            <div className="ind-event">
+              <p>Ceremony</p>
+              <div className="rsvp-checkboxes">
+                <label htmlFor="">Will Attend</label>
+                <input type="checkbox" name="y-c" id="" />
+                <label htmlFor="">Will Not Attend</label>
+                <input type="checkbox" name="n-c" id="" />
+              </div>
+            </div>
+          </div>
         </div>
-      )
+      );
     }
   });
-
-  // const guestInvites = invites.map((occ) => {
-  //   // refine logic of this render
-  //   if (occ === "Y") {
-  //     return (
-  //       <div className="event-container">
-  //           <h4>{guests[0]}</h4>
-  //         <div className="event-attendance">
-  //           <p>Rehearsal Dinner</p>
-  //           <label htmlFor="">Will Attend</label>
-  //           <input type="checkbox" name="y-wp" id="" />
-  //           <label htmlFor="">Will Not Attend</label>
-  //           <input type="checkbox" name="n-wp" id="" />
-  //         </div>
-  //         <div className="event-attendance">
-  //           <p>Welcome Party</p>
-  //           <label htmlFor="">Will Attend</label>
-  //           <input type="checkbox" name="y-wp" id="" />
-  //           <label htmlFor="">Will Not Attend</label>
-  //           <input type="checkbox" name="n-wp" id="" />
-  //         </div>
-  //         <div className="event-attendance">
-  //           <p>Ceremony</p>
-  //           <label htmlFor="">Will Attend</label>
-  //           <input type="checkbox" name="y-wp" id="" />
-  //           <label htmlFor="">Will Not Attend</label>
-  //           <input type="checkbox" name="n-wp" id="" />
-  //         </div>
-  //       </div>
-  //     );
-  //   }
-  // });
 
   function confirmRSVP(e) {
     e.preventDefault();
@@ -80,7 +173,6 @@ export default function RSVPRespond({ partyObj, guestObj }) {
     for (const entry of data) {
       console.log(entry);
     }
-    // send response(s) to RSVP table
   }
 
   return (

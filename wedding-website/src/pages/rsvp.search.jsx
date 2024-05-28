@@ -49,10 +49,6 @@ export default function RSVPSearch() {
     }
   }
 
-  console.log(partyObj);
-
-
-
   return (
     <div>
       <Header />
