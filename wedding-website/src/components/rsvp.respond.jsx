@@ -3,7 +3,10 @@ import "../style/rsvp.respond.css";
 
 export default function RSVPRespond({ partyObj, guestObj }) {
   const [guest1RSVP, setGuest1RSVP] = useState("");
+  const [guest1_WP_RSVP, setGuest1_WP_RSVP] = useState({})
   const [guest2RSVP, setGuest2RSVP] = useState("");
+
+  console.log(guest1_WP_RSVP);
 
   const guestInvites = partyObj.map(() => {
     if (
@@ -22,7 +25,7 @@ export default function RSVPRespond({ partyObj, guestObj }) {
               <p>Welcome Party</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="">Will Attend</label>
-                <input type="checkbox" name="y-wp" id="" />
+                <input type="checkbox" name="y-wp" id=""/>
                 <label htmlFor="">Will Not Attend</label>
                 <input type="checkbox" name="n-wp" id="" />
               </div>
