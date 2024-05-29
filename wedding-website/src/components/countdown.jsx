@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 
+// this needs some work
+
 function calculateTimeLeft() {
 const weddingDate = new Date("May 5, 2025 18:00:00").getTime();
 const daysToGo = weddingDate - new Date().getTime();
