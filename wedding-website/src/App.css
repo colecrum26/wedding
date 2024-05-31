@@ -241,3 +241,6 @@ li {
   flex-direction: row;
 }
 
+.registry-loc {
+  letter-spacing: 4px;
+}
