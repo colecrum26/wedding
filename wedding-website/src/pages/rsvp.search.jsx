@@ -33,7 +33,11 @@ export default function RSVPSearch() {
        {
         console.log("Success");
         setGuestObj({
+          g1_first: `${party.g1_first}`,
+          g1_last: `${party.g1_last}`,
           guest1Name: `${party.g1_first} ${party.g1_last}`,
+          g2_first: `${party.g2_first}`,
+          g2_last: `${party.g2_last}`,
           guest2Name: `${party.g2_first} ${party.g2_last}`
         })
         setPartyObj([{
@@ -75,7 +79,7 @@ export default function RSVPSearch() {
           <div className="form-el-wrapper wbtn">
             <button className="rsvp-classbtn" onClick={handleSearch}>Continue</button>
           </div>
-          <div>{showComponent && <RSVPRespond partyObj={partyObj} guestObj={guestObj} />}</div>
+          <div>{showComponent && <RSVPRespond partyObj={partyObj} guestObj={guestObj} list={guestList} />}</div>
         </form>
         <p>For questions or concerns, please contact the couple directly.</p>
       </div>

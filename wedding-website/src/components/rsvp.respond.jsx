@@ -2,11 +2,23 @@ import { useEffect, useState } from "react";
 import "../style/rsvp.respond.css";
 
 export default function RSVPRespond({ partyObj, guestObj }) {
-  const [guest1RSVP, setGuest1RSVP] = useState("");
-  const [guest1_WP_RSVP, setGuest1_WP_RSVP] = useState({})
+  const [guest1RSVP, setGuest1RSVP] = useState({});
   const [guest2RSVP, setGuest2RSVP] = useState("");
 
-  console.log(guest1_WP_RSVP);
+  console.log(guestObj);
+
+  function handleGuestResponse(e) {
+
+    if (e.target.name === "y-rd" && e.target.value === "on")
+
+    setGuest1RSVP({
+      g1_first: guestObj.g1_first,
+      g1_last: guestObj.g1_last,
+      ...guest1RSVP,
+        g1_attend_rd: "Yes"
+    })
+  }
+  console.log(guest1RSVP);
 
   const guestInvites = partyObj.map(() => {
     if (
@@ -108,7 +120,7 @@ export default function RSVPRespond({ partyObj, guestObj }) {
               <p>Rehearsal Dinner</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="">Will Attend</label>
-                <input type="checkbox" name="y-rd" id="" />
+                <input type="checkbox" name="y-rd" id="" onChange={handleGuestResponse}/>
                 <label htmlFor="">Will Not Attend</label>
                 <input type="checkbox" name="n-rd" id="" />
               </div>
@@ -140,7 +152,7 @@ export default function RSVPRespond({ partyObj, guestObj }) {
               <p>Rehearsal Dinner</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="">Will Attend</label>
-                <input type="checkbox" name="y-rd" id="" />
+                <input type="checkbox" name="y-rd" id="" onChange={handleGuestResponse}/>
                 <label htmlFor="">Will Not Attend</label>
                 <input type="checkbox" name="n-rd" id="" />
               </div>
@@ -181,7 +193,9 @@ export default function RSVPRespond({ partyObj, guestObj }) {
   return (
     <div className="page-container">
       <div className="content-wrapper">
-        <form onSubmit={confirmRSVP}>
+        <form 
+        onSubmit={confirmRSVP}
+        >
           {guestInvites}
           <button className="rsvp-classbtn">Confirm RSVP</button>
         </form>
