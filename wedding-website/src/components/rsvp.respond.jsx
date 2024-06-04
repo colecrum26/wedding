@@ -4,31 +4,46 @@ import "../style/rsvp.respond.css";
 export default function RSVPRespond({ partyObj, guestObj }) {
   const [guest1RSVP, setGuest1RSVP] = useState("");
   const [guest2RSVP, setGuest2RSVP] = useState("");
+  const [checkedResponse, setCheckedResponse] = useState([]);
   const [formData, setFormData] = useState([]);
 
-  console.log(guestObj);
-
-  function handleGuestResponse(e) {
-
-    if (e.target.name === "y-rd" && e.target.value === "on")
-
-    setGuest1RSVP({
-      g1_first: guestObj.g1_first,
-      g1_last: guestObj.g1_last,
-      ...guest1RSVP,
-        g1_attend_rd: "Yes"
-    })
-  }
-  console.log(guest1RSVP);
-
-  useEffect(() => {
-    if(guest1RSVP && guest2RSVP){
-      setFormData([guest1RSVP, guest2RSVP]);
-    } else if (guest1RSVP){
-      setFormData([guest1RSVP]);
+  function handleResponse(e) {
+    if (e.target.checked) {
+      setCheckedResponse([...checkedResponse, e.target.value]);
+    } else {
+      setCheckedResponse(checkedResponse.filter((item) => item !== e.target.value));
     }
+  }
+  console.log(checkedResponse);
 
-  },[guest1RSVP, guest2RSVP]);
+  // function handleGuestResponse(e) {
+  //   if (e.target.name === "y-rd" && e.target.value === "on")
+
+  //   setGuest1RSVP({
+  //     g1_first: guestObj.g1_first,
+  //     g1_last: guestObj.g1_last,
+  //     ...guest1RSVP,
+  //       g1_attend_rd: "Yes"
+  //   });
+  //   setGuest2RSVP({
+  //     g2_first: guestObj.g2_first,
+  //     g2_last: guestObj.g2_last,
+  //     ...guest2RSVP,
+  //       g2_attend_rd: "Yes"
+  //   });
+  // }
+  // console.log(guest1RSVP);
+  // console.log(guest2RSVP);
+
+  // useEffect(() => {
+  //   if (guest1RSVP && guest2RSVP) {
+  //     setFormData([guest1RSVP, guest2RSVP]);
+  //   } else if (guest1RSVP) {
+  //     setFormData([guest1RSVP]);
+  //   }
+  // },[guest1RSVP, guest2RSVP]);
+
+  // console.log(formData);
 
   const guestInvites = partyObj.map(() => {
     if (
@@ -47,18 +62,18 @@ export default function RSVPRespond({ partyObj, guestObj }) {
               <p>Welcome Party</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="">Will Attend</label>
-                <input type="checkbox" name="y-wp" id=""/>
+                <input type="checkbox" value="WP: Yes" name="y-wp" id="" onChange={handleResponse}/>
                 <label htmlFor="">Will Not Attend</label>
-                <input type="checkbox" name="n-wp" id="" />
+                <input type="checkbox" value="WP: No" name="n-wp" id="" onChange={handleResponse}/>
               </div>
             </div>
             <div className="ind-event">
               <p>Ceremony</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="">Will Attend</label>
-                <input type="checkbox" name="y-c" id="" />
+                <input type="checkbox" value="C: Yes" name="y-c" id="" onChange={handleResponse}/>
                 <label htmlFor="">Will Not Attend</label>
-                <input type="checkbox" name="n-c" id="" />
+                <input type="checkbox" value="C: No" name="n-c" id="" onChange={handleResponse}/>
               </div>
             </div>
           </div>
@@ -130,7 +145,7 @@ export default function RSVPRespond({ partyObj, guestObj }) {
               <p>Rehearsal Dinner</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="">Will Attend</label>
-                <input type="checkbox" name="y-rd" id="" onChange={handleGuestResponse}/>
+                <input type="checkbox" name="y-rd" id="" />
                 <label htmlFor="">Will Not Attend</label>
                 <input type="checkbox" name="n-rd" id="" />
               </div>
@@ -162,7 +177,7 @@ export default function RSVPRespond({ partyObj, guestObj }) {
               <p>Rehearsal Dinner</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="">Will Attend</label>
-                <input type="checkbox" name="y-rd" id="" onChange={handleGuestResponse}/>
+                <input type="checkbox" name="y-rd" id="" />
                 <label htmlFor="">Will Not Attend</label>
                 <input type="checkbox" name="n-rd" id="" />
               </div>
