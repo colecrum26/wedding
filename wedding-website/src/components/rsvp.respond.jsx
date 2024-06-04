@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import "../style/rsvp.respond.css";
 
 export default function RSVPRespond({ partyObj, guestObj }) {
-  const [guest1RSVP, setGuest1RSVP] = useState({});
+  const [guest1RSVP, setGuest1RSVP] = useState("");
   const [guest2RSVP, setGuest2RSVP] = useState("");
+  const [formData, setFormData] = useState([]);
 
   console.log(guestObj);
 
@@ -19,6 +20,15 @@ export default function RSVPRespond({ partyObj, guestObj }) {
     })
   }
   console.log(guest1RSVP);
+
+  useEffect(() => {
+    if(guest1RSVP && guest2RSVP){
+      setFormData([guest1RSVP, guest2RSVP]);
+    } else if (guest1RSVP){
+      setFormData([guest1RSVP]);
+    }
+
+  },[guest1RSVP, guest2RSVP]);
 
   const guestInvites = partyObj.map(() => {
     if (
