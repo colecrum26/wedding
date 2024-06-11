@@ -67,6 +67,7 @@ export default function RSVPSearch() {
           <div className="form-el-wrapper">
             <input
               type="text"
+              autoCapitalize="words"
               onChange={(e) => {setSearchedName(e.target.value)}}
             />
           </div>
