@@ -95,6 +95,16 @@ li {
   list-style: none;
 }
 
+img {
+  width: 900px;
+  height: auto;
+}
+.gallery-image {
+  width: 300px;
+  height: auto;
+  padding: 4px;
+}
+
 .rsvp-classbtn {
   background-color: var(--accent-darkGreen);
   border: 1px solid var(--accent-darkerGreen);
@@ -118,6 +128,9 @@ li {
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
+}
+.content-wrapper.gallery {
+  flex-direction: row;
 }
 
 .form-el-wrapper {
