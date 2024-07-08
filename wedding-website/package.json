@@ -1,7 +1,7 @@
 {
+  "homepage": "https://colecrum26.github.io/",
   "name": "wedding-website",
   "version": "0.1.0",
-  "homepage": "https://colecrum26.github.io/wedding/",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
