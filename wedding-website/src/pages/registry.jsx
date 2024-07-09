@@ -17,6 +17,17 @@ export default function Registry() {
           View
         </NavLink>
       </div>
+      <div className="content-wrapper">
+        <h1 className="registry-loc">CRATE & BARREL</h1>
+        <NavLink
+          className="faux"
+          to="https://www.crateandbarrel.com/gift-registry/rebecca-norwood-and-cole-crumrine/r7145067"
+          target="_blank"
+          rel="noreferrer"
+        >
+          View
+        </NavLink>
+      </div>
       <RSVPButton />
     </div>
   );
