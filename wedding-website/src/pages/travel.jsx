@@ -19,8 +19,8 @@ export default function Travel() {
           >
             120 Halston Avenue, Greenville, SC 29615
           </a>
-          <p className="block">Room blocks are reserved under Norwood-Crumrine Wedding</p>
-          <p className="block">Discount Code: NorwoodCrumrine</p>
+          <p className="block">Accommodations are reserved at Hotel Hartness for the weekend.</p>
+          <p className="block">All weekend activities will be hosted here and we encouraage you to book your room soon.</p>
           <NavLink
             className="faux"
             to="https://www.hotelhartness.com/"
@@ -33,19 +33,19 @@ export default function Travel() {
         <div className="travel-option">
           <span>Hotel</span>
           <h1 className="header-main">
-            COURTYARD GREENVILLE-SPARTANBURG AIRPORT
+            HAMTPON INN GREENVILLE AIRPORT
           </h1>
           <a
-            href="https://maps.app.goo.gl/By7KX6N7Mr9gFVg96"
+            href="http://maps.apple.com/maps?q=128+The+Parkway+Greenville+SC+29615"
             className="address-link"
             target="_blank"
             rel="noreferrer"
           >
-            115 The Parkway, Greenville, SC 29615
+            128 The Parkway, Greenville, SC 29615
           </a>
           <NavLink
             className="faux special-case"
-            to="https://www.marriott.com/en-us/hotels/gspph-courtyard-greenville-spartanburg-airport/overview/?scid=f2ae0541-1279-4f24-b197-a979c79310b0"
+            to="https://www.guestreservations.com/hampton-inn-suites-greenville-airport/booking?gad_source=1&gbraid=0AAAAADiMQMazPyAG2Cd74euRnk3TjZyCG&ctTriggered=true"
             target="_blank"
             rel="noreferrer"
           >
