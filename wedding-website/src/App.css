@@ -18,6 +18,9 @@ html {
 }
 
 body {
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: center; */
   font-family: "Libre Baskerville";
   margin: 0;
   padding: 0;
@@ -47,16 +50,20 @@ header {
   font-weight: 100;
   letter-spacing: 6px;
 }
-.header-main.page-top {
+.page-top {
+  font-family: "Cormorant Infant";
   font-size: 46px;
+  font-weight: 100;
+  letter-spacing: 6px;
 }
 
 nav {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 20px;
-  width: inherit;
+  width: 100%;
 }
 
 form {
@@ -95,7 +102,7 @@ li {
   list-style: none;
 }
 
-img {
+#intro-img {
   width: 900px;
   height: auto;
 }
@@ -247,6 +254,7 @@ img {
 }
 .block {
   font-size: 18px;
+  /* width: ; */
 }
 
 .timer-countdown {
@@ -256,4 +264,21 @@ img {
 
 .registry-loc {
   letter-spacing: 4px;
+}
+
+@media screen and (max-width: 600px) {
+
+
+  p {
+    width: 400px;
+  }
+
+  .header-main {
+    width: 600px;
+  }
+
+  #intro-img {
+    width: 420px;
+    height: auto;
+  }
 }

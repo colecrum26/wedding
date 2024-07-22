@@ -19,15 +19,15 @@ export default function Travel() {
           >
             120 Halston Avenue, Greenville, SC 29615
           </a>
-          <p className="block">Accommodations are reserved at Hotel Hartness for the weekend.</p>
-          <p className="block">All weekend activities will be hosted here and we encourage you to book your room soon.</p>
+          <p className="block">Accommodations are reserved at Hotel Hartness for the weekend. All weekend activities will be hosted here and we encourage you to book your room soon.</p>
+          {/* <p className="block"></p> */}
           <NavLink
             className="faux"
             to="https://www.hotelhartness.com/"
             target="_blank"
             rel="noreferrer"
           >
-            View
+            Book
           </NavLink>
         </div>
         <div className="travel-option">
@@ -49,7 +49,7 @@ export default function Travel() {
             target="_blank"
             rel="noreferrer"
           >
-            View
+            Book
           </NavLink>
         </div>
         <div className="travel-option">

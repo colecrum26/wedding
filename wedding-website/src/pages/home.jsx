@@ -10,7 +10,7 @@ export default function Home() {
       <Header />
         <h1>May 3, 2025</h1>
       <div className="content-wrapper">
-        <img src={bestLook} alt="our best look" id="" />
+        <img src={bestLook} alt="our best look" id="intro-img" />
         <div className="info-container">
           <div className="general-info">
             <h1 className="header-main">REBECCA NORWOOD</h1>
