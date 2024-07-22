@@ -23,7 +23,7 @@ export default function Schedule() {
           <p className="attire">Attire: Cocktail</p>
           <h1 className="event-title">Welcome Party</h1>
           <p className="event-time">8:00pm - 10:00pm</p>
-          <p>Hotel Hartness</p>
+          <p>Hotel Hartness Lobby</p>
           <a
             href="https://maps.app.goo.gl/P1DLLtYHZG9etaMW8"
             className="address-link"

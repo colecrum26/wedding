@@ -12,7 +12,7 @@ export default function WeddingParty() {
             <li className="bp-item">MARY CONNOR COX</li>
             <span className="wedding-role">Maid of Honor</span>
             <li className="bp-item">HALEY HUGHES</li>
-            <span className="wedding-role">Maid of Honor</span>
+            <span className="wedding-role">Matron of Honor</span>
             <li className="bp-item">TORI CARTER</li>
             <li className="bp-item">LOGAN COLE</li>
             <li className="bp-item">REID COX</li>

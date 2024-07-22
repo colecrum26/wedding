@@ -10,11 +10,12 @@ import shot7 from "../assets/IMG_4047.JPG";
 import shot8 from "../assets/IMG_4051.JPG";
 import shot9 from "../assets/IMG_4064.JPG";
 import shot10 from "../assets/IMG_4078.JPG";
-import shot11 from "../assets/IMG_4087.JPG";
+import shot11 from "../assets/IMG_4102.JPG";
 import shot12 from "../assets/IMG_4100.JPG";
 import shot13 from "../assets/IMG_4108.JPG";
 import shot14 from "../assets/IMG_4109.JPG";
 import shot15 from "../assets/IMG_4111.JPG";
+import shot16 from "../assets/IMG_4115.jpeg";
 
 export default function Gallery() {
   return (
@@ -36,6 +37,7 @@ export default function Gallery() {
         <img src={shot13} alt="" className="gallery-image" />
         <img src={shot14} alt="" className="gallery-image" />
         <img src={shot15} alt="" className="gallery-image" />
+        <img src={shot16} alt="" className="gallery-image" />
       </div>
       <RSVPButton />
     </div>
