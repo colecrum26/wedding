@@ -20,7 +20,7 @@ export default function Travel() {
             120 Halston Avenue, Greenville, SC 29615
           </a>
           <p className="block">Accommodations are reserved at Hotel Hartness for the weekend.</p>
-          <p className="block">All weekend activities will be hosted here and we encouraage you to book your room soon.</p>
+          <p className="block">All weekend activities will be hosted here and we encourage you to book your room soon.</p>
           <NavLink
             className="faux"
             to="https://www.hotelhartness.com/"
@@ -36,7 +36,7 @@ export default function Travel() {
             HAMTPON INN GREENVILLE AIRPORT
           </h1>
           <a
-            href="http://maps.apple.com/maps?q=128+The+Parkway+Greenville+SC+29615"
+            href="https://maps.app.goo.gl/ZWB7GS7M3tn8bkh87"
             className="address-link"
             target="_blank"
             rel="noreferrer"

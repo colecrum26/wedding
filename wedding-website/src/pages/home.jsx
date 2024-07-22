@@ -1,8 +1,8 @@
 import Header from "../components/header";
 import RSVPButton from "../components/rsvpBtn";
-import Countdown from "../components/countdown";
 import { NavLink } from "react-router-dom";
 import bestLook from "../assets/IMG_4135.JPG"
+// import Countdown from "../components/countdown";
 
 export default function Home() {
   return (
@@ -18,7 +18,7 @@ export default function Home() {
             <h1 className="header-main">COLE CRUMRINE</h1>
           </div>
           <div className="rsvp-container">
-            <Countdown />
+            {/* <Countdown /> */}
             <h3>Hotel Hartness, Greenville, South Carolina</h3>
             <NavLink className="faux" to="/rsvp">
               RSVP
