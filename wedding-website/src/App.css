@@ -235,13 +235,13 @@ li {
 }
 
 .instructions {
-  width: 800px;
+  width: 75%;
   text-align: center;
   margin: 8px;
 }
 
 .question {
-  width: 800px;
+  width: 75%;
 }
 
 .in-copy-link {
@@ -267,21 +267,4 @@ li {
 
 .registry-loc {
   letter-spacing: 4px;
-}
-
-@media screen and (max-width: 600px) {
-
-
-  p {
-    width: 55%;
-  }
-
-  /* .header-main {
-    width: 75%;
-  } */
-
-  #intro-img {
-    width: 75%;
-    height: auto;
-  }
 }
