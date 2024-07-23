@@ -182,7 +182,7 @@ li {
 
 .address-link {
   text-decoration: underline;
-  font-size: 24px;
+  font-size: 1.35rem;
 }
 
 .maids, .men {
@@ -214,6 +214,7 @@ li {
 }
 .activities p {
   margin: 12px;
+  font-size: 1.25rem;
 }
 
 .events p {
@@ -267,4 +268,10 @@ li {
 
 .registry-loc {
   letter-spacing: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  #header-title {
+    font-size: 1.8rem;
+  }
 }
