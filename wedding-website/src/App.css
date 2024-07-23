@@ -20,13 +20,13 @@ html {
 }
 
 body {
-  /* display: flex;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: center; */
+  justify-content: center;
   font-family: "Libre Baskerville";
   min-height: 100vh;
   overflow-x: hidden;
-  width: 100%;
+  width: 100vw;
 }
 
 div {
@@ -46,13 +46,13 @@ header {
 }
 .header-main {
   font-family: "Cormorant Infant";
-  font-size: 42px;
+  font-size: 2rem;
   font-weight: 100;
   letter-spacing: 6px;
 }
 .page-top {
   font-family: "Cormorant Infant";
-  font-size: 46px;
+  font-size: 2.5rem;
   font-weight: 100;
   letter-spacing: 6px;
 }
@@ -118,7 +118,7 @@ li {
   color: white;
   padding: 5px 20px;
   border-radius: 3px;
-  font-size: 18px;
+  font-size: 2rem;
 }
 .rsvp-classbtn:hover {
   background-color: var(--accent-darkGreen-overlay);
@@ -126,6 +126,8 @@ li {
 }
 
 .content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   margin: 40px 0;
   text-align: center;
@@ -149,6 +151,7 @@ li {
 
 .general-info {
   margin-top: 20px;
+  width: 100%;
 }
 .general-info h1 {
   margin: 0;
@@ -207,7 +210,7 @@ li {
 }
 
 .activities {
-  max-width: 100%;
+  max-width: 600px;
 }
 .activities p {
   margin: 12px;
@@ -270,12 +273,12 @@ li {
 
 
   p {
-    width: 400px;
+    width: 55%;
   }
 
-  .header-main {
-    width: 600px;
-  }
+  /* .header-main {
+    width: 75%;
+  } */
 
   #intro-img {
     width: 75%;
