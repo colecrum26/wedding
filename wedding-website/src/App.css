@@ -74,7 +74,8 @@ input {
 }
 
 p {
-  font-size: 24px;
+  width: 75%;
+  font-size: 1.1rem;
 }
 
 span {
@@ -256,8 +257,7 @@ li {
   margin: 12px;
 }
 .block {
-  font-size: 18px;
-  /* width: ; */
+  font-size: 1.1rem;
 }
 
 .timer-countdown {
@@ -272,5 +272,10 @@ li {
 @media screen and (max-width: 600px) {
   #header-title {
     font-size: 1.8rem;
+  }
+
+  .answer {
+    width: 100%;
+    text-align: left;
   }
 }

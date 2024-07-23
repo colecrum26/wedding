@@ -68,7 +68,7 @@ export default function RSVPSearch() {
             <input
               type="text"
               autoCapitalize="words"
-              onChange={(e) => {setSearchedName(e.target.value)}}
+              onChange={(e) => {setSearchedName(e.target.value.replace(/(^\w|\s\w)(\S*)/g, (_,m1,m2) => m1.toUpperCase()+m2.toLowerCase()))}}
             />
           </div>
           <div className="form-el-wrapper">
