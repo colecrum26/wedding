@@ -7,6 +7,7 @@ export default function Registry() {
     <div className="page-container">
       <Header />
       <div className="content-wrapper">
+        <div className="registry-host">
         <h1 className="registry-loc">WILLIAMS SONOMA</h1>
         <NavLink
           className="faux"
@@ -16,8 +17,8 @@ export default function Registry() {
         >
           View
         </NavLink>
-      </div>
-      <div className="content-wrapper">
+        </div>
+        <div className="registry-host">
         <h1 className="registry-loc">CRATE & BARREL</h1>
         <NavLink
           className="faux"
@@ -27,6 +28,7 @@ export default function Registry() {
         >
           View
         </NavLink>
+        </div>
       </div>
       <RSVPButton />
     </div>
