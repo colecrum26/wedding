@@ -208,11 +208,11 @@ export default function RSVPRespond({ partyObj, guestObj }) {
 
   function confirmRSVP(e) {
     e.preventDefault();
-    const formData = new FormData(e.target);
-    const data = formData.entries();
-    for (const entry of data) {
-      console.log(entry);
-    }
+    // const formData = new FormData(e.target);
+    // const data = formData.entries();
+    // for (const entry of data) {
+    //   console.log(entry);
+    // }
   }
 
   return (
@@ -220,6 +220,8 @@ export default function RSVPRespond({ partyObj, guestObj }) {
       <div className="content-wrapper">
         <form 
         onSubmit={confirmRSVP}
+        action="http://localhost:5553/api/guests"
+        method="post"
         >
           {guestInvites}
           <button className="rsvp-classbtn">Confirm RSVP</button>

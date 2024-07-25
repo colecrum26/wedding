@@ -117,7 +117,7 @@ li {
   color: white;
   padding: 5px 20px;
   border-radius: 3px;
-  font-size: 2rem;
+  font-size: 18px;
 }
 .rsvp-classbtn:hover {
   background-color: var(--accent-darkGreen-overlay);
@@ -170,7 +170,7 @@ li {
   font-size: 18px;
 }
 .faux:hover {
-  border: 1px solid var(--accent-darkerGreen);
+  /* border: 1px solid var(--accent-darkerGreen); */
   background-color: var(--accent-darkGreen-overlay);
 }
 .faux:active {
