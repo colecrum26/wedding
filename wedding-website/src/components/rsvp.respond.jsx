@@ -5,16 +5,65 @@ export default function RSVPRespond({ partyObj, guestObj }) {
   const [guest1RSVP, setGuest1RSVP] = useState("");
   const [guest2RSVP, setGuest2RSVP] = useState("");
   const [checkedResponse, setCheckedResponse] = useState([]);
-  const [formData, setFormData] = useState([]);
+  const [formData, setFormData] = useState({
+    g1_first: "",
+    g1_last: "",
+    g2_first: "",
+    g2_last: "",
+    g1_attend_rd: "",
+    g1_attend_wp: "",
+    g1_attend_c: "",
+    g2_attend_rd: "",
+    g2_attend_wp: "",
+    g2_attend_wp: "",
+    responses: []
+  });
 
-  function handleResponse(e) {
-    if (e.target.checked) {
-      setCheckedResponse([...checkedResponse, e.target.value]);
-    } else {
-      setCheckedResponse(checkedResponse.filter((item) => item !== e.target.value));
+  const handleResponse = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  }
+
+  const handleCheckbox = (e) => {
+    const { g1_attend_wp, checked } = e.target;
+    setFormData((prevFormData) => {
+      if (checked) {
+        return { ...prevFormData, responses: [prevFormData.responses] }
+      } else {
+        return { ...prevFormData, responses: prevFormData.responses.filter((response) => response !== g1_attend_wp)}
+      }
+    })
+  }
+  console.log(formData);
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://localhost:5553/api/submit-form", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+      const data = await response.json();
+      console.log(data);
+    } catch (err) {
+      console.err("Error:", err);
     }
   }
-  console.log(checkedResponse);
+
+  // function handleResponse(e) {
+  //   if (e.target.checked) {
+  //     setCheckedResponse([...checkedResponse, e.target.value]);
+  //   } else {
+  //     setCheckedResponse(checkedResponse.filter((item) => item !== e.target.value));
+  //   }
+  // }
+  // console.log(checkedResponse);
 
   // function handleGuestResponse(e) {
   //   if (e.target.name === "y-rd" && e.target.value === "on")
@@ -62,18 +111,18 @@ export default function RSVPRespond({ partyObj, guestObj }) {
               <p>Welcome Party</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="">Will Attend</label>
-                <input type="checkbox" value="WP: Yes" name="y-wp" id="" onChange={handleResponse}/>
+                <input type="checkbox" name="WP-Yes" checked={formData.responses.includes('WP-Yes')} id="" onChange={handleCheckbox}/>
                 <label htmlFor="">Will Not Attend</label>
-                <input type="checkbox" value="WP: No" name="n-wp" id="" onChange={handleResponse}/>
+                <input type="checkbox" name="WP-No" checked={formData.responses.includes('WP-Yes')} id="" onChange={handleCheckbox}/>
               </div>
             </div>
             <div className="ind-event">
               <p>Ceremony</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="">Will Attend</label>
-                <input type="checkbox" value="C: Yes" name="y-c" id="" onChange={handleResponse}/>
+                <input type="checkbox" name="C-Yes" id="" onChange={handleResponse}/>
                 <label htmlFor="">Will Not Attend</label>
-                <input type="checkbox" value="C: No" name="n-c" id="" onChange={handleResponse}/>
+                <input type="checkbox" name="C-No" id="" onChange={handleResponse}/>
               </div>
             </div>
           </div>
@@ -206,25 +255,21 @@ export default function RSVPRespond({ partyObj, guestObj }) {
     }
   });
 
-  function confirmRSVP(e) {
-    e.preventDefault();
+  // function confirmRSVP(e) {
+  //   e.preventDefault();
     // const formData = new FormData(e.target);
     // const data = formData.entries();
     // for (const entry of data) {
     //   console.log(entry);
     // }
-  }
+  // }
 
   return (
     <div className="page-container">
       <div className="content-wrapper">
-        <form 
-        onSubmit={confirmRSVP}
-        action="http://localhost:5553/api/guests"
-        method="post"
-        >
+        <form onSubmit={handleSubmit}>
           {guestInvites}
-          <button className="rsvp-classbtn">Confirm RSVP</button>
+          <button className="rsvp-classbtn" type="submit">Confirm RSVP</button>
         </form>
       </div>
     </div>
