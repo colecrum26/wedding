@@ -13,6 +13,7 @@ export default function Home() {
         <img src={bestLook} alt="our best look" id="intro-img" />
         <div className="info-container">
           <div className="general-info">
+            {/* both side by side or both stacked */}
             <h1 className="header-main">REBECCA NORWOOD</h1>
             <p className="info-amper">and</p>
             <h1 className="header-main">COLE CRUMRINE</h1>

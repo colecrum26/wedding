@@ -3,10 +3,13 @@ import RSVPButton from "../components/rsvpBtn";
 
 export default function Schedule() {
   return (
+    // make each page return to top when changing
     <div className="page-container">
       <Header />
       <div className="content-wrapper">
         <div className="events">
+          {/* weekday
+              m/d/y */}
           <h1 className="header-main">FRIDAY, MAY 2, 2025</h1>
           <h1 className="event-title">Rehearsal Dinner</h1>
           <p id="io-note">(Invitation Only)</p>
