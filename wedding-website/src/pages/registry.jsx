@@ -29,6 +29,17 @@ export default function Registry() {
           View
         </NavLink>
         </div>
+        <div>
+          <h1>A'MANO</h1>
+          <NavLink 
+            className="faux"
+            to="https://shopamanogifts.com/apps/giftregistry/registry/339154?_r=1&utm_source=gift_reggie&utm_medium=gift_reggie&utm_campaign=gift_reggie&utm_content=339154"
+            target="blank"
+            rel="noreferrer"
+          >
+            View
+          </NavLink>
+        </div>
       </div>
       <RSVPButton />
     </div>
