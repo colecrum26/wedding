@@ -1,6 +1,8 @@
 import Header from "../components/header";
 import RSVPButton from "../components/rsvpBtn";
 import { NavLink } from "react-router-dom";
+import { FaHotel } from "react-icons/fa";
+import { IoIosAirplane } from "react-icons/io";
 
 export default function Travel() {
   return (
@@ -8,7 +10,7 @@ export default function Travel() {
       <Header />
       <div className="content-wrapper">
         <div className="travel-option">
-          <span>Hotel</span>
+          <FaHotel />
           <h1 className="header-main">HOTEL HARTNESS</h1>
           <a
             href="https://maps.app.goo.gl/Pn66RdexLmsiRoft7"
@@ -29,7 +31,7 @@ export default function Travel() {
           </NavLink>
         </div>
         <div className="travel-option">
-          <span>Hotel</span>
+          <FaHotel />
           <h1 className="header-main">
             HAMTPON INN GREENVILLE AIRPORT
           </h1>
@@ -51,7 +53,7 @@ export default function Travel() {
           </NavLink>
         </div>
         <div className="travel-option">
-          <span>Flight</span>
+          <IoIosAirplane />
           <h1 className="header-main">
             GREENVILLE-SPARTANBURG INT'L AIRPORT (GSP)
           </h1>
