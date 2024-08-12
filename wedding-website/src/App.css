@@ -170,7 +170,6 @@ li {
   font-size: 18px;
 }
 .faux:hover {
-  /* border: 1px solid var(--accent-darkerGreen); */
   background-color: var(--accent-darkGreen-overlay);
 }
 .faux:active {
@@ -278,10 +277,16 @@ li {
     width: 75%;
   }
   .header-main.event-date {
-    width: 60%;
+    width: 65%;
   }
 
   .answer {
     width: 100%;
+  }
+}
+
+@media (width: 430px) {
+  .header-main.event-date {
+    width: 60%;
   }
 }
