@@ -18,12 +18,13 @@ html {
 }
 
 body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   font-family: "Libre Baskerville";
-  margin: 0;
-  padding: 0;
-  width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
+  /* width: 100vw; */
 }
 
 div {
@@ -31,7 +32,7 @@ div {
   flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 header {
@@ -43,20 +44,24 @@ header {
 }
 .header-main {
   font-family: "Cormorant Infant";
-  font-size: 42px;
+  font-size: 2rem;
   font-weight: 100;
   letter-spacing: 6px;
 }
-.header-main.page-top {
-  font-size: 46px;
+.page-top {
+  font-family: "Cormorant Infant";
+  font-size: 2.5rem;
+  font-weight: 100;
+  letter-spacing: 6px;
 }
 
 nav {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 20px;
-  width: inherit;
+  width: 100%;
 }
 
 form {
@@ -69,7 +74,8 @@ input {
 }
 
 p {
-  font-size: 24px;
+  width: 75%;
+  font-size: 1.1rem;
 }
 
 span {
@@ -95,8 +101,8 @@ li {
   list-style: none;
 }
 
-img {
-  width: 900px;
+#intro-img {
+  width: 75%;
   height: auto;
 }
 .gallery-image {
@@ -119,6 +125,8 @@ img {
 }
 
 .content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
   margin: 40px 0;
   text-align: center;
@@ -131,6 +139,7 @@ img {
 }
 .content-wrapper.gallery {
   flex-direction: row;
+  justify-content: center;
 }
 
 .form-el-wrapper {
@@ -142,6 +151,7 @@ img {
 
 .general-info {
   margin-top: 20px;
+  width: 100%;
 }
 .general-info h1 {
   margin: 0;
@@ -160,7 +170,7 @@ img {
   font-size: 18px;
 }
 .faux:hover {
-  border: 1px solid var(--accent-darkerGreen);
+  /* border: 1px solid var(--accent-darkerGreen); */
   background-color: var(--accent-darkGreen-overlay);
 }
 .faux:active {
@@ -172,7 +182,7 @@ img {
 
 .address-link {
   text-decoration: underline;
-  font-size: 24px;
+  font-size: 1.35rem;
 }
 
 .maids, .men {
@@ -204,6 +214,7 @@ img {
 }
 .activities p {
   margin: 12px;
+  font-size: 1.25rem;
 }
 
 .events p {
@@ -225,13 +236,13 @@ img {
 }
 
 .instructions {
-  width: 800px;
+  width: 75%;
   text-align: center;
   margin: 8px;
 }
 
 .question {
-  width: 800px;
+  width: 75%;
 }
 
 .in-copy-link {
@@ -239,14 +250,14 @@ img {
 }
 
 .travel-option {
-  width: 800px;
+  width: 80%;
   margin-bottom: 40px;
 }
 .travel-option p {
   margin: 12px;
 }
 .block {
-  font-size: 18px;
+  font-size: 1.1rem;
 }
 
 .timer-countdown {
@@ -256,4 +267,21 @@ img {
 
 .registry-loc {
   letter-spacing: 4px;
+}
+
+@media screen and (max-width: 600px) {
+  #header-title {
+    font-size: 1.8rem;
+  }
+
+  .header-main.names {
+    width: 75%;
+  }
+  .header-main.event-date {
+    width: 60%;
+  }
+
+  .answer {
+    width: 100%;
+  }
 }

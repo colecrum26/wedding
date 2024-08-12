@@ -8,7 +8,7 @@ export default function FAQ() {
       <div className="content-wrapper">
         <div className="question">
           <h1 className="header-main">WHY HOTEL HARTNESS?</h1>
-          <p>
+          <p className="answer">
             We chose Hotel Hartness because of Rebecca's special connection to
             the property. The main hotel property was formerly the home of Pat
             and Mary Lou Hartness, Rebecca's great uncle and aunt. Rebecca,
@@ -22,14 +22,14 @@ export default function FAQ() {
           <h1 className="header-main">
             WHAT TIME SHOULD I ARRIVE AT THE CEREMONY?
           </h1>
-          <p>
+          <p className="answer">
             Please arrive at 5:30pm to find your seat. The ceremony will begin
             at 6:00pm.
           </p>
         </div>
         <div className="question">
           <h1 className="header-main">ARE KIDS WELCOME?</h1>
-          <p>
+          <p className="answer">
             While we love your little ones, we kindly ask that all wedding
             events be adults only. We hope you can enjoy the weekend off to
             celebrate!
@@ -37,7 +37,7 @@ export default function FAQ() {
         </div>
         <div className="question">
           <h1 className="header-main">IS THERE A DRESS CODE?</h1>
-          <p>
+          <p className="answer">
             We ask that our guests wear black tie attire. Want to dress for the
             theme? Feel free to express yourself in fabulous
             garden-party-inspired formal wear! Consult the{" "}

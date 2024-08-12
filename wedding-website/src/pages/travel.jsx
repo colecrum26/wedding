@@ -9,7 +9,6 @@ export default function Travel() {
       <div className="content-wrapper">
         <div className="travel-option">
           <span>Hotel</span>
-          {/* adjust margin somewhere */}
           <h1 className="header-main">HOTEL HARTNESS</h1>
           <a
             href="https://maps.app.goo.gl/Pn66RdexLmsiRoft7"
@@ -19,15 +18,14 @@ export default function Travel() {
           >
             120 Halston Avenue, Greenville, SC 29615
           </a>
-          <p className="block">Accommodations are reserved at Hotel Hartness for the weekend.</p>
-          <p className="block">All weekend activities will be hosted here and we encourage you to book your room soon.</p>
+          <p className="block">Accommodations are reserved at Hotel Hartness for the weekend. All weekend activities will be hosted here and we encourage you to book your room soon.</p>
           <NavLink
             className="faux"
-            to="https://www.hotelhartness.com/"
+            to="https://us01.iqwebbook.com/HHSC796/~/"
             target="_blank"
             rel="noreferrer"
           >
-            View
+            Book
           </NavLink>
         </div>
         <div className="travel-option">
@@ -49,7 +47,7 @@ export default function Travel() {
             target="_blank"
             rel="noreferrer"
           >
-            View
+            Book
           </NavLink>
         </div>
         <div className="travel-option">

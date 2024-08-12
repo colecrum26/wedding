@@ -1,8 +1,15 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { Home, Schedule, Travel, Registry, Gallery, WeddingParty, ThingsToDo, FAQ, RSVPSearch, RSVPRespond } from "./pages";
 import "./App.css";
+import { useLayoutEffect } from "react";
 
 function App() {
+  // const location = useLocation();
+
+  // useLayoutEffect(() => {
+  //   document.documentElement.scrollTo({ top:0, left:0, behavior: "instant" });
+  // }, [location.pathname]);
+
   return (
     <Router>
       <Routes>

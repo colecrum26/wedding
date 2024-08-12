@@ -3,11 +3,12 @@ import RSVPButton from "../components/rsvpBtn";
 
 export default function Schedule() {
   return (
+    // make each page return to top when changing
     <div className="page-container">
       <Header />
       <div className="content-wrapper">
         <div className="events">
-          <h1 className="header-main">FRIDAY, MAY 2, 2025</h1>
+          <h1 className="header-main event-date">FRIDAY, MAY 2, 2025</h1>
           <h1 className="event-title">Rehearsal Dinner</h1>
           <p id="io-note">(Invitation Only)</p>
           <p className="event-time">6:00pm - 8:00pm</p>
@@ -35,9 +36,13 @@ export default function Schedule() {
           <p className="attire">Attire: Cocktail</p>
         </div>
         <div className="events">
-          <h1 className="header-main">SATURDAY, MAY 3, 2025</h1>
-          <h1 className="event-title">Ceremony & Reception</h1>
-          <p className="event-time">6:00pm - 11:00pm</p>
+          <h1 className="header-main event-date">SATURDAY, MAY 3, 2025</h1>
+          <h1 className="event-title">Ceremony</h1>
+          <p className="event-time">6:00pm - 6:30pm</p>
+          <h1 className="event-title">Cocktail Hour</h1>
+          <p className="event-time">6:30pm - 7:30pm</p>
+          <h1 className="event-title">Reception</h1>
+          <p className="event-time">7:30pm - 10:30pm</p>
           <p>Hotel Hartness</p>
           <a
             href="https://maps.app.goo.gl/DXcL6Mjs8DtGCsM19"
@@ -49,7 +54,7 @@ export default function Schedule() {
           </a>
           <p className="attire">Attire: Black Tie</p>
           <h1 className="event-title">After Party</h1>
-          <p className="event-time">11:00pm - 12:30am</p>
+          <p className="event-time">10:30pm - 12:00am</p>
           <p>The Captain at Hotel Hartness</p>
           <a
             href="https://maps.app.goo.gl/DXcL6Mjs8DtGCsM19"
