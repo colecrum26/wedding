@@ -63,7 +63,7 @@ export default function RSVPSearch() {
           below. 
         </p>
         <p className="instructions">You'll be able to RSVP for you and a guest (or your family).</p>
-        <form action="" >
+        {/* <form action="" > */}
           <div className="form-el-wrapper">
             <input
               type="text"
@@ -81,7 +81,7 @@ export default function RSVPSearch() {
             <button className="rsvp-classbtn" onClick={handleSearch}>Continue</button>
           </div>
           <div>{showComponent && <RSVPRespond partyObj={partyObj} guestObj={guestObj} list={guestList} />}</div>
-        </form>
+        {/* </form> */}
         <p>For questions or concerns, please contact the couple directly.</p>
       </div>
     </div>
