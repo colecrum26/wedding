@@ -274,6 +274,13 @@ li {
     font-size: 1.8rem;
   }
 
+  .header-main.names {
+    width: 75%;
+  }
+  .header-main.event-date {
+    width: 60%;
+  }
+
   .answer {
     width: 100%;
   }
