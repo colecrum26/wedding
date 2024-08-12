@@ -1,4 +1,5 @@
 import Header from "../components/header";
+import Nav from "../components/nav";
 import RSVPButton from "../components/rsvpBtn";
 import { NavLink } from "react-router-dom";
 import bestLook from "../assets/IMG_4135.JPG"
@@ -7,7 +8,8 @@ import bestLook from "../assets/IMG_4135.JPG"
 export default function Home() {
   return (
     <div className="page-container">
-      <Header />
+      <Nav />
+      {/* <Header /> */}
         <h1 className="wedding-date">May 3, 2025</h1>
       <div className="content-wrapper">
         <img src={bestLook} alt="our best look" id="intro-img" />
