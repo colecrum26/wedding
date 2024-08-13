@@ -73,7 +73,7 @@ export default function RSVPSearch() {
           </div>
           <div className="form-el-wrapper">
             <span>
-              E.g. Johnny Appleseed, (not The Appleseeds or Mr. and Mrs.
+              (E.g. Johnny Appleseed, not The Appleseeds or Mr. and Mrs.
               Appleseed)
             </span>
           </div>
