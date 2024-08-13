@@ -11,7 +11,7 @@ export default function RSVPSearch() {
 
   async function searchGuest() {
     try {
-      let response = await fetch("http://localhost:5553/api/guests");
+      let response = await fetch("http://mysql://root:pZIOlhowuoluJVpBbNUPAsPuZOrlyAKV@mysql.railway.internal:3306/railway/api/guests");
       let result = await response.json();
       console.log(result);
       setGuestList(result);
