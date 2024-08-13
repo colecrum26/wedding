@@ -9,9 +9,11 @@ export default function RSVPSearch() {
   const [partyObj, setPartyObj] = useState([{}]);
   const [showComponent, setShowComponent] = useState(false);
 
+  console.log(guestList);
+
   async function searchGuest() {
     try {
-      let response = await fetch("http://mysql://root:pZIOlhowuoluJVpBbNUPAsPuZOrlyAKV@mysql.railway.internal:3306/railway/api/guests");
+      let response = await fetch("https://wedding-guestlist-production.up.railway.app/api/guests");
       let result = await response.json();
       console.log(result);
       setGuestList(result);

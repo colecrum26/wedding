@@ -26,7 +26,7 @@ export default function RSVPRespond({ partyObj, guestObj }) {
     e.preventDefault();
     console.log(JSON.stringify(formData));
     try {
-      const response = await fetch("http://mysql://root:pZIOlhowuoluJVpBbNUPAsPuZOrlyAKV@mysql.railway.internal:3306/railway/api/guests/submit-form", {
+      const response = await fetch("https://wedding-guestlist-production.up.railway.app/api/guests/api/guests/submit-form", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
