@@ -1,5 +1,6 @@
-import { useState } from "react"
-import Hamburger from "./hamburger"
+import { useState } from "react";
+import { NavLink } from "react-router-dom";
+import Hamburger from "./hamburger";
 
 export default function Nav() {
     const [hamburgerOpen, setHamburgerOpen] = useState(false);
@@ -12,11 +13,17 @@ export default function Nav() {
 
     return (
         <div className="nav-test">
+            <h1 className="page-top"><NavLink to="/" id="header-title">REBECCA & COLE</NavLink></h1>
             <div className="navigation">
                 <ul>
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Contact</li>
+                    <li><NavLink to="/">Home</NavLink></li>
+                    <li><NavLink to="/schedule">Schedule</NavLink></li>
+                    <li><NavLink to="/travel">Travel</NavLink></li>
+                    <li><NavLink to="/registry">Registry</NavLink></li>
+                    <li><NavLink to="/gallery">Gallery</NavLink></li>
+                    <li><NavLink to="/wedding-party">Wedding Party</NavLink></li>
+                    <li><NavLink to="/things-to-do">Things to Do</NavLink></li>
+                    <li><NavLink to="/questions">FAQ</NavLink></li>
                 </ul>
                 <div className="hamburger" onClick={toggleHamburger}>
                     <Hamburger />
