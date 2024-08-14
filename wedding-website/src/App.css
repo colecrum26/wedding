@@ -48,6 +48,9 @@ header {
   font-weight: 100;
   letter-spacing: 6px;
 }
+.header-main.wip {
+  letter-spacing: normal;
+}
 .page-top {
   font-family: "Cormorant Infant";
   font-size: 2.5rem;

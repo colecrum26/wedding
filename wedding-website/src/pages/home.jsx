@@ -5,6 +5,7 @@ import bestLook from "../assets/IMG_4135.JPG"
 // import Countdown from "../components/countdown";
 
 export default function Home() {
+
   return (
     <div className="page-container">
       <Header />
