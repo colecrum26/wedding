@@ -3,18 +3,5 @@
     font-weight: 500;
 }
 
-.nav-links {
-    margin: 20px 0 0 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.nav-item {
-    font-size: 1.15rem;
-    padding: 0 1rem;
-    list-style: none;
-}
-
 
 

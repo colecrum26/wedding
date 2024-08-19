@@ -1,11 +1,13 @@
 import Header from "../components/header";
+import Nav from "../components/nav";
 import RSVPButton from "../components/rsvpBtn";
 
 export default function Schedule() {
   return (
     // make each page return to top when changing
     <div className="page-container">
-      <Header />
+      {/* <Header /> */}
+      <Nav />
       <div className="content-wrapper">
         <div className="events">
           <h1 className="header-main event-date">FRIDAY, MAY 2, 2025</h1>

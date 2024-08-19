@@ -1,0 +1,35 @@
+.nav-bar {
+    width: 100%;
+}
+
+.navigation {
+    display: block;
+    width: 100%;
+    height: 50px;
+    background-color: var(--primary-background);
+}
+
+.navigation ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    float: inherit;
+    margin: 10px 0;
+    padding: 0 25px;
+}
+
+.navigation ul li {
+    list-style-type: none;
+    font-size: 1.15rem;
+    padding: 0 1rem;
+}
+
+.hamburger {
+    display: none;
+    z-index: 6;
+}
+
+#header-title:hover {
+    color: var(--primary-green);
+    font-weight: 500;
+}
