@@ -1,4 +1,3 @@
-import Header from "../components/header";
 import Nav from "../components/nav";
 import RSVPButton from "../components/rsvpBtn";
 
@@ -6,7 +5,6 @@ export default function Schedule() {
   return (
     // make each page return to top when changing
     <div className="page-container">
-      {/* <Header /> */}
       <Nav />
       <div className="content-wrapper">
         <div className="events">

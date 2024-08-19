@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import Header from "../components/header";
+import Nav from "../components/nav";
 import RSVPRespond from "../components/rsvp.respond";
 
 export default function RSVPSearch() {
@@ -55,7 +55,7 @@ export default function RSVPSearch() {
 
   return (
     <div>
-      <Header />
+      <Nav />
       <h1>RSVP</h1>
       <div className="rsvp-dialogue">
         <p className="instructions">

@@ -1,4 +1,4 @@
-import Header from "../components/header";
+import Nav from "../components/nav";
 import RSVPButton from "../components/rsvpBtn";
 import shot1 from "../assets/IMG_3996.JPG";
 import shot2 from "../assets/IMG_3997.JPG";
@@ -20,7 +20,7 @@ import shot16 from "../assets/IMG_4115.jpeg";
 export default function Gallery() {
   return (
     <div className="page-container">
-      <Header />
+      <Nav />
       <div className="content-wrapper gallery">
         <img src={shot1} alt=""  className="gallery-image"/>
         <img src={shot2} alt=""  className="gallery-image"/>
