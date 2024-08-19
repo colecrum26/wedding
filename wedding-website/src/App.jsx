@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { Home, Schedule, Travel, Registry, Gallery, WeddingParty, ThingsToDo, FAQ, RSVPSearch, RSVPRespond } from "./pages";
+import WIP from "./components/wip";
 import "./App.css";
 import { useLayoutEffect } from "react";
 
@@ -21,7 +22,7 @@ function App() {
         <Route path="/wedding-party" element={<WeddingParty />}></Route>
         <Route path="/things-to-do" element={<ThingsToDo />}></Route>
         <Route path="/questions" element={<FAQ />}></Route>
-        <Route path="/rsvp" element={<RSVPSearch />}></Route>
+        <Route path="/rsvp" element={<WIP />}></Route>
         {/* <Route path="/rsvp-respond" element={<RSVPRespond />}></Route> */}
       </Routes>
     </Router>
