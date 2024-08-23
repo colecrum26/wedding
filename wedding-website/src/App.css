@@ -4,7 +4,7 @@
   --accent-darkGreen: rgb(79, 104, 61);
   --accent-darkerGreen: rgb(51, 76, 33);
   --accent-darkGreen-overlay: rgba(79, 104, 61, 0.8);
-  --accent-darkGold: #be9b0c;
+  --accent-darkGold: #be9a0c30;
 }
 
 * {
@@ -131,7 +131,7 @@ li {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 40px 0;
+  margin: 20px 0;
   text-align: center;
 }
 .content-wrapper.wp {
@@ -272,6 +272,11 @@ li {
 }
 
 @media screen and (max-width: 600px) {
+
+  nav {
+    margin-bottom: 10px;
+  }
+
   #header-title {
     font-size: 1.8rem;
   }

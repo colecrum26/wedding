@@ -1,11 +1,11 @@
-import Header from "../components/header";
+import Nav from "../components/nav";
 import RSVPButton from "../components/rsvpBtn";
 import { NavLink } from "react-router-dom";
 
 export default function Registry() {
   return (
     <div className="page-container">
-      <Header />
+      <Nav />
       <div className="content-wrapper">
         <div className="registry-host">
         <h1 className="registry-loc">WILLIAMS SONOMA</h1>

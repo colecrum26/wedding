@@ -1,4 +1,4 @@
-import Header from "../components/header";
+import Nav from "../components/nav";
 import RSVPButton from "../components/rsvpBtn";
 import { NavLink } from "react-router-dom";
 import { FaHotel } from "react-icons/fa";
@@ -7,7 +7,7 @@ import { IoIosAirplane } from "react-icons/io";
 export default function Travel() {
   return (
     <div className="page-container">
-      <Header />
+      <Nav />
       <div className="content-wrapper">
         <div className="travel-option">
           <FaHotel />

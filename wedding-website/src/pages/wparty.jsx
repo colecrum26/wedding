@@ -1,10 +1,10 @@
-import Header from "../components/header";
+import Nav from "../components/nav";
 import RSVPButton from "../components/rsvpBtn";
 
 export default function WeddingParty() {
   return (
     <div className="page-container">
-      <Header />
+      <Nav />
       <div className="content-wrapper wp">
         <div className="bp-list">
           <ul className="maids">
