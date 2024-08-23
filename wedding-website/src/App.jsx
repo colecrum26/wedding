@@ -1,5 +1,5 @@
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
-import { Home, Schedule, Travel, Registry, Gallery, WeddingParty, ThingsToDo, FAQ, RSVPSearch, RSVPRespond } from "./pages";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Home, Schedule, Travel, Registry, Gallery, WeddingParty, ThingsToDo, FAQ } from "./pages";
 import WIP from "./components/wip";
 import "./App.css";
 import { useLayoutEffect } from "react";
