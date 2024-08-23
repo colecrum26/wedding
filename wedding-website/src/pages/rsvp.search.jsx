@@ -9,9 +9,11 @@ export default function RSVPSearch() {
   const [partyObj, setPartyObj] = useState([{}]);
   const [showComponent, setShowComponent] = useState(false);
 
+  console.log(guestList);
+
   async function searchGuest() {
     try {
-      let response = await fetch("http://localhost:5553/api/guests");
+      let response = await fetch("https://wedding-guestlist-production.up.railway.app/api/guests");
       let result = await response.json();
       console.log(result);
       setGuestList(result);
@@ -26,7 +28,6 @@ export default function RSVPSearch() {
 
   function handleSearch(e) {
     e.preventDefault();
-    // reevaluate loop
     for (let party of guestList) {
       if (`${party.g1_first} ${party.g1_last}` === searchedName ||
           `${party.g2_first} ${party.g2_last}` === searchedName )
@@ -62,8 +63,7 @@ export default function RSVPSearch() {
           Please enter the first and last name of one member of your party
           below. 
         </p>
-        <p className="instructions">You'll be able to RSVP for you and a guest (or your family).</p>
-        <form action="" >
+        <p className="instructions">You'll be able to RSVP for you and a guest (or your family) from this page.</p>
           <div className="form-el-wrapper">
             <input
               type="text"
@@ -73,7 +73,7 @@ export default function RSVPSearch() {
           </div>
           <div className="form-el-wrapper">
             <span>
-              E.g. Johnny Appleseed, (not The Appleseeds or Mr. and Mrs.
+              (E.g. Johnny Appleseed, not The Appleseeds or Mr. and Mrs.
               Appleseed)
             </span>
           </div>
@@ -81,8 +81,7 @@ export default function RSVPSearch() {
             <button className="rsvp-classbtn" onClick={handleSearch}>Continue</button>
           </div>
           <div>{showComponent && <RSVPRespond partyObj={partyObj} guestObj={guestObj} list={guestList} />}</div>
-        </form>
-        <p>For questions or concerns, please contact the couple directly.</p>
+        <p className="instructions">For questions or concerns, please contact the couple directly.</p>
       </div>
     </div>
   );

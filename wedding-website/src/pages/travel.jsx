@@ -23,7 +23,7 @@ export default function Travel() {
           <p className="block">Accommodations are reserved at Hotel Hartness for the weekend. All weekend activities will be hosted here and we encourage you to book your room soon.</p>
           <NavLink
             className="faux"
-            to="https://us01.iqwebbook.com/HHSC796/~/"
+            to="https://reservations.travelclick.com/111785?groupID=4449021"
             target="_blank"
             rel="noreferrer"
           >

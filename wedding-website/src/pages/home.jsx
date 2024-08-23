@@ -4,6 +4,7 @@ import { NavLink } from "react-router-dom";
 import bestLook from "../assets/IMG_4135.JPG"
 
 export default function Home() {
+
   return (
     <div className="page-container">
       <Nav />

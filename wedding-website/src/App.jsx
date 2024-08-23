@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home, Schedule, Travel, Registry, Gallery, WeddingParty, ThingsToDo, FAQ } from "./pages";
 import WIP from "./components/wip";
 import "./App.css";
-// import { useLayoutEffect } from "react"; 
+// import { useLayoutEffect } from "react";
 
 function App() {
   // const location = useLocation();
