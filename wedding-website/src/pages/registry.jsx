@@ -41,7 +41,7 @@ export default function Registry() {
           </NavLink>
         </div>
         <div className="registry-host">
-        <h1 className="registry-loc">PROVENCE ETCETERA</h1>
+        <h1 className="registry-loc">THE SHOPS OF PROVENCE</h1>
         <NavLink
           className="faux"
           to="https://provence.myshoplocal.com/registry.cfm/47782/Norwood_Crumrine/May-03-2025"
