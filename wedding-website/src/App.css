@@ -219,6 +219,9 @@ li {
   font-size: 1.25rem;
 }
 
+.events.last {
+  margin-bottom: 40px;
+}
 .events p {
   margin: 12px;
 }

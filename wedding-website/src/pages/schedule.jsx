@@ -35,7 +35,7 @@ export default function Schedule() {
           </a>
           <p className="attire">Attire: Cocktail</p>
         </div>
-        <div className="events">
+        <div className="events last">
           <h1 className="header-main event-date">SATURDAY, MAY 3, 2025</h1>
           <h1 className="event-title">Ceremony</h1>
           <p className="event-time">6:00pm - 6:30pm</p>
