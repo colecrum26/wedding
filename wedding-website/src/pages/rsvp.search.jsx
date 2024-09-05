@@ -13,7 +13,13 @@ export default function RSVPSearch() {
 
   async function searchGuest() {
     try {
-      let response = await fetch("https://wedding-guestlist-production.up.railway.app:3306/api/guests");
+      let response = await fetch("https://wedding-guestlist-production.up.railway.app/api/guests", {
+        method: "GET",
+        credentials: "include",
+        headers: {
+          "Content-Type": "application/json",
+        },
+      });
       let result = await response.json();
       console.log(result);
       setGuestList(result);

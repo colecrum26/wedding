@@ -26,7 +26,7 @@ export default function RSVPRespond({ partyObj, guestObj }) {
     e.preventDefault();
     console.log(JSON.stringify(formData));
     try {
-      const response = await fetch("https://wedding-guestlist-production.up.railway.app/api/guests/api/guests/submit-form", {
+      const response = await fetch("https://wedding-guestlist-production.up.railway.app/api/guests/submit-form", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -49,7 +49,7 @@ export default function RSVPRespond({ partyObj, guestObj }) {
     ) {
       return (
         <div className="guest-invite-container">
-          <p>Note: If you are not planning on attending, please leave the selection(s) blank and click Confirm RSVP.</p>
+          <p>Note: If you are not planning on attending, please leave the selection(s) blank and then click Confirm RSVP.</p>
           <p>
             <strong>{guestObj.guest1Name}</strong>
           </p>
