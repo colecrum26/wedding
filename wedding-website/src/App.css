@@ -245,6 +245,9 @@ li {
   text-align: center;
   margin: 8px;
 }
+.instructions.rsvp {
+  margin: 1rem 0 2rem;
+}
 
 .question {
   width: 75%;

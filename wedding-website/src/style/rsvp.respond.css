@@ -2,9 +2,22 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin: 0.5rem;
+}
+
+.rsvp-guest {
+    margin: 1.2rem 0 0;
 }
 
 .ind-event {
     margin: 0 12px;
     min-width: 175px;
+}
+
+.rsvp-check {
+    accent-color: var(--accent-darkGold);
+}
+
+.rsvp-classbtn {
+    margin-top: 1rem;
 }

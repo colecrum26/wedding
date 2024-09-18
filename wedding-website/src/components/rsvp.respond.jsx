@@ -50,22 +50,20 @@ export default function RSVPRespond({ partyObj, guestObj }) {
       return (
         <div className="guest-invite-container">
           <p>Note: If you are not planning on attending, please leave the selection(s) blank and then click Confirm RSVP.</p>
-          <p>
-            <strong>{guestObj.guest1Name}</strong>
-          </p>
+          <h3 className="rsvp-guest">{guestObj.guest1Name}</h3>
           <div className="event-attendance-container">
             <div className="ind-event">
-              <p><strong>Welcome Party</strong></p>
+              <p>Welcome Party</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g1_attend_wp">Will Attend</label>
-                <input type="checkbox" name="g1_attend_wp" id="" checked={formData.g1_attend_wp === "Yes"} onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g1_attend_wp" id="" checked={formData.g1_attend_wp === "Yes"} onChange={handleResponse}/>
               </div>
             </div>
             <div className="ind-event">
-              <p><strong>Ceremony</strong></p>
+              <p>Ceremony</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g1_attend_c">Will Attend</label>
-                <input type="checkbox" name="g1_attend_c" id="" checked={formData.g1_attend_c === "Yes"} onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g1_attend_c" id="" checked={formData.g1_attend_c === "Yes"} onChange={handleResponse}/>
               </div>
             </div>
           </div>
@@ -79,41 +77,37 @@ export default function RSVPRespond({ partyObj, guestObj }) {
       return (
         <div className="guest-invite-container">
           <p>Note: If you are not planning on attending, please leave the selection(s) blank and click Confirm RSVP.</p>
-          <p>
-            <strong>{guestObj.guest1Name}</strong>
-          </p>
+          <h3 className="rsvp-guest">{guestObj.guest1Name}</h3>
           <div className="event-attendance-container">
             <div className="ind-event">
               <p>Welcome Party</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g1_attend_wp">Will Attend</label>
-                <input type="checkbox" name="g1_attend_wp" id="" checked={formData.g1_attend_wp === "Yes"} onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g1_attend_wp" id="" checked={formData.g1_attend_wp === "Yes"} onChange={handleResponse}/>
               </div>
             </div>
             <div className="ind-event">
               <p>Ceremony</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g1_attend_c">Will Attend</label>
-                <input type="checkbox" name="g1_attend_c" id="" checked={formData.g1_attend_c === "Yes"} onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g1_attend_c" id="" checked={formData.g1_attend_c === "Yes"} onChange={handleResponse}/>
               </div>
             </div>
           </div>
-          <p>
-            <strong>{guestObj.guest2Name}</strong>
-          </p>
+          <h3 className="rsvp-guest">{guestObj.guest2Name}</h3>
           <div className="event-attendance-container">
             <div className="ind-event">
               <p>Welcome Party</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g2_attend_wp">Will Attend</label>
-                <input type="checkbox" name="g2_attend_wp" id="" checked={formData.g2_attend_wp === "Yes"} onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g2_attend_wp" id="" checked={formData.g2_attend_wp === "Yes"} onChange={handleResponse}/>
               </div>
             </div>
             <div className="ind-event">
               <p>Ceremony</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g2_attend_c">Will Attend</label>
-                <input type="checkbox" name="g2_attend_c" id="" checked={formData.g2_attend_c === "Yes"} onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g2_attend_c" id="" checked={formData.g2_attend_c === "Yes"} onChange={handleResponse}/>
               </div>
             </div>
           </div>
@@ -123,55 +117,51 @@ export default function RSVPRespond({ partyObj, guestObj }) {
       return (
         <div className="guest-invite-container">
           <p>Note: If you are not planning on attending, please leave the selection(s) blank and click Confirm RSVP.</p>
-          <p>
-            <strong>{guestObj.guest1Name}</strong>
-          </p>
+          <h3 className="rsvp-guest">{guestObj.guest1Name}</h3>
           <div className="event-attendance-container">
             <div className="ind-event">
               <p>Rehearsal Dinner</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g1_attend_rd">Will Attend</label>
-                <input type="checkbox" name="g1_attend_rd" id="" checked={formData.g1_attend_rd === "Yes"} onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g1_attend_rd" id="" checked={formData.g1_attend_rd === "Yes"} onChange={handleResponse}/>
               </div>
             </div>
             <div className="ind-event">
               <p>Welcome Party</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g1_attend_wp">Will Attend</label>
-                <input type="checkbox" name="g1_attend_wp" id="" checked={formData.g1_attend_wp === "Yes"} onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g1_attend_wp" id="" checked={formData.g1_attend_wp === "Yes"} onChange={handleResponse}/>
               </div>
             </div>
             <div className="ind-event">
               <p>Ceremony</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g1_attend_c">Will Attend</label>
-                <input type="checkbox" name="g1_attend_c" id="" checked={formData.g1_attend_c === "Yes"} onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g1_attend_c" id="" checked={formData.g1_attend_c === "Yes"} onChange={handleResponse}/>
               </div>
             </div>
           </div>
-          <p>
-            <strong>{guestObj.guest2Name}</strong>
-          </p>
+          <h3 className="rsvp-guest">{guestObj.guest2Name}</h3>
           <div className="event-attendance-container">
             <div className="ind-event">
               <p>Rehearsal Dinner</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g2_attend_rd">Will Attend</label>
-                <input type="checkbox" name="g2_attend_rd" id="" checked={formData.g2_attend_rd} onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g2_attend_rd" id="" checked={formData.g2_attend_rd} onChange={handleResponse}/>
               </div>
             </div>
             <div className="ind-event">
               <p>Welcome Party</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g2_attend_wp">Will Attend</label>
-                <input type="checkbox" name="g2_attend_wp" id="" checked={formData.g2_attend_wp} onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g2_attend_wp" id="" checked={formData.g2_attend_wp} onChange={handleResponse}/>
               </div>
             </div>
             <div className="ind-event">
               <p>Ceremony</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g2_attend_c">Will Attend</label>
-                <input type="checkbox" name="g2_attend_c" id="" checked={formData.g2_attend_c} onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g2_attend_c" id="" checked={formData.g2_attend_c} onChange={handleResponse}/>
               </div>
             </div>
           </div>

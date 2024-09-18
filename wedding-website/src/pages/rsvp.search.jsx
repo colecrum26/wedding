@@ -87,7 +87,7 @@ export default function RSVPSearch() {
             <button className="rsvp-classbtn" onClick={handleSearch}>Continue</button>
           </div>
           <div>{showComponent && <RSVPRespond partyObj={partyObj} guestObj={guestObj} list={guestList} />}</div>
-        <p className="instructions">For questions or concerns, please contact the couple directly.</p>
+        <p className="instructions rsvp">For questions or concerns, please contact the couple directly.</p>
       </div>
     </div>
   );

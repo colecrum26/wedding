@@ -23,7 +23,7 @@ export default function Home() {
               RSVP
             </NavLink>
           </div>
-          {/* <NavLink to="/rsvp-test">Test</NavLink> */}
+          <NavLink to="/rsvp-test">Test</NavLink>
         </div>
       </div>
       <RSVPButton />
