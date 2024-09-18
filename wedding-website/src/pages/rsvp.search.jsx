@@ -8,6 +8,7 @@ export default function RSVPSearch() {
   const [guestObj, setGuestObj] = useState({});
   const [partyObj, setPartyObj] = useState([{}]);
   const [showComponent, setShowComponent] = useState(false);
+  const [displayMessage, setDisplayMessage] = useState("");
 
   console.log(guestList);
 
@@ -55,7 +56,8 @@ export default function RSVPSearch() {
         setShowComponent(true);
         break;
       } else {
-        console.log("Sorry, no invite")
+        setShowComponent(false);
+        setDisplayMessage("Sorry, we were unable to find your invitation.")
       }
     }
   }
@@ -86,7 +88,7 @@ export default function RSVPSearch() {
           <div className="form-el-wrapper wbtn">
             <button className="rsvp-classbtn" onClick={handleSearch}>Continue</button>
           </div>
-          <div>{showComponent && <RSVPRespond partyObj={partyObj} guestObj={guestObj} list={guestList} />}</div>
+          <div>{showComponent === true ? showComponent && <RSVPRespond partyObj={partyObj} guestObj={guestObj} list={guestList}/> : displayMessage }</div>
         <p className="instructions rsvp">For questions or concerns, please contact the couple directly.</p>
       </div>
     </div>

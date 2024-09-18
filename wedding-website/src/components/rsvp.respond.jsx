@@ -1,4 +1,5 @@
 import { useState } from "react";
+// useNavigate to display success message
 import "../style/rsvp.respond.css";
 
 export default function RSVPRespond({ partyObj, guestObj }) {
