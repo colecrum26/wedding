@@ -84,6 +84,10 @@ p {
 span {
   margin: 0px 2px;
 }
+.eg-search {
+  margin: 2px 0;
+  font-size: 0.8rem;
+}
 
 a {
   text-decoration: none;
