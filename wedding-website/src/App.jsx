@@ -1,15 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Home, Schedule, Travel, Registry, Gallery, WeddingParty, ThingsToDo, FAQ, RSVPSearch } from "./pages";
+import ScrollToTop from "./components/ScrollToTop";
 import WIP from "./components/wip";
 import "./App.css";
-// import { useLayoutEffect } from "react";
 
 function App() {
-  // const location = useLocation();
-
-  // useLayoutEffect(() => {
-  //   document.documentElement.scrollTo({ top:0, left:0, behavior: "instant" });
-  // }, [location.pathname]);
 
   return (
     <Router>
@@ -25,6 +20,7 @@ function App() {
         <Route path="/rsvp" element={<WIP />}></Route>
         {/* <Route path="/rsvp-test" element={<RSVPSearch />}></Route> */}
       </Routes>
+      <ScrollToTop />
     </Router>
   );
 }
