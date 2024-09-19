@@ -16,11 +16,12 @@ export default function RSVPRespond({ partyObj, guestObj }) {
     g2_attend_c: ""
   });
 
+  // examine this further
   const handleResponse = (e) => {
-    setFormData({
-      ...formData,
-      [e.target.name]: (e.target.value === "on" ? "Yes" : "No")
-    });
+      setFormData({
+        ...formData,
+        [e.target.name]: (e.target.value === "on" ? "Yes" : "No")
+      });
   }
 
   const handleSubmit = async (e) => {
@@ -160,7 +161,7 @@ export default function RSVPRespond({ partyObj, guestObj }) {
               <p>Rehearsal Dinner</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g1_attend_rd">Will Attend</label>
-                <input type="checkbox" className="rsvp-check" name="g1_attend_rd" id="" checked={formData.g1_attend_rd === "Yes"} onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g1_attend_rd" id="" onChange={handleResponse}/>
               </div>
             </div>
             <div className="ind-event">

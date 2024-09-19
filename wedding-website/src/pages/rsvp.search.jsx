@@ -37,7 +37,6 @@ export default function RSVPSearch() {
       if (`${party.g1_first} ${party.g1_last}` === searchedName ||
           `${party.g2_first} ${party.g2_last}` === searchedName )
        {
-        console.log("Success");
         setGuestObj({
           g1_first: `${party.g1_first}`,
           g1_last: `${party.g1_last}`,
