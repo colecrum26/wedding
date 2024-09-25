@@ -4,7 +4,6 @@ import "../style/rsvp.respond.css";
 
 export default function RSVPRespond({ partyObj, guestObj }) {
   const [formData, setFormData] = useState({
-    id: new Date(),
     g1_first: guestObj.g1_first,
     g1_last: guestObj.g1_last,
     g2_first: guestObj.g2_first,
@@ -21,12 +20,8 @@ export default function RSVPRespond({ partyObj, guestObj }) {
       setFormData({
         ...formData,
         [e.target.name]: e.target.checked ? "Yes" : "No"
-        [e.target.name]: e.target.checked ? "Yes" : "No"
       });
   }
-
-  const navigate = useNavigate();
-
 
   const navigate = useNavigate();
   
