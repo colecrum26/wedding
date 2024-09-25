@@ -18,7 +18,7 @@ function App() {
         <Route path="/things-to-do" element={<ThingsToDo />}></Route>
         <Route path="/questions" element={<FAQ />}></Route>
         <Route path="/rsvp" element={<WIP />}></Route>
-        <Route path="/rsvp-test" element={<RSVPSearch />}></Route>
+        {/* <Route path="/rsvp-test" element={<RSVPSearch />}></Route> */}
         <Route path="/rsvp-submitted" element={<RSVPSubmitted />}></Route>
       </Routes>
       <ScrollToTop />
