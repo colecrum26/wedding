@@ -35,6 +35,7 @@ export default function RSVPRespond({ partyObj, guestObj }) {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(formData),
+        
       });
       const data = await response.json();
       console.log(data);
