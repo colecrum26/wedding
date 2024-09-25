@@ -85,7 +85,7 @@ export default function RSVPSearch() {
           <div className="form-el-wrapper wbtn">
             <button className="rsvp-classbtn" onClick={handleSearch}>Continue</button>
           </div>
-          <div>{showComponent === true ? showComponent && <RSVPRespond partyObj={partyObj} guestObj={guestObj} list={guestList}/> : displayMessage }</div>
+          <div>{showComponent === true ? showComponent && <RSVPRespond partyObj={partyObj} guestObj={guestObj} /> : displayMessage }</div>
         <p className="instructions rsvp">For questions or concerns, please contact the couple directly.</p>
       </div>
     </div>

@@ -21,11 +21,15 @@ export default function RSVPRespond({ partyObj, guestObj }) {
       setFormData({
         ...formData,
         [e.target.name]: e.target.checked ? "Yes" : "No"
+        [e.target.name]: e.target.checked ? "Yes" : "No"
       });
   }
 
   const navigate = useNavigate();
 
+
+  const navigate = useNavigate();
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     console.log(JSON.stringify(formData));
@@ -43,6 +47,7 @@ export default function RSVPRespond({ partyObj, guestObj }) {
       console.error("Error:", err);
     }
     navigate("/rsvp-submission");
+    navigate("/rsvp-submitted");
   }
 
   const guestInvites = partyObj.map(() => {
@@ -61,21 +66,21 @@ export default function RSVPRespond({ partyObj, guestObj }) {
               <p className="event-name">Rehearsal Dinner</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g1_attend_rd">Will Attend</label>
-                <input type="checkbox" className="rsvp-check" name="g1_attend_rd" id="" onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g1_attend_rd" id="g1_attend_rd" onChange={handleResponse}/>
               </div>
             </div>
             <div className="ind-event">
               <p className="event-name">Welcome Party</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g1_attend_wp">Will Attend</label>
-                <input type="checkbox" className="rsvp-check" name="g1_attend_wp" id="" onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g1_attend_wp" id="g1_attend_wp" onChange={handleResponse}/>
               </div>
             </div>
             <div className="ind-event">
               <p className="event-name">Ceremony</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g1_attend_c">Will Attend</label>
-                <input type="checkbox" className="rsvp-check" name="g1_attend_c" id="" onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g1_attend_c" id="g1_attend_c" onChange={handleResponse}/>
               </div>
             </div>
           </div>
@@ -97,14 +102,14 @@ export default function RSVPRespond({ partyObj, guestObj }) {
               <p className="event-name">Welcome Party</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g1_attend_wp">Will Attend</label>
-                <input type="checkbox" className="rsvp-check" name="g1_attend_wp" id="" onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g1_attend_wp" id="g1_attend_wp" onChange={handleResponse}/>
               </div>
             </div>
             <div className="ind-event">
               <p className="event-name">Ceremony</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g1_attend_c">Will Attend</label>
-                <input type="checkbox" className="rsvp-check" name="g1_attend_c" id="" onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g1_attend_c" id="g1_attend_c" onChange={handleResponse}/>
               </div>
             </div>
           </div>
@@ -124,14 +129,14 @@ export default function RSVPRespond({ partyObj, guestObj }) {
               <p className="event-name">Welcome Party</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g1_attend_wp">Will Attend</label>
-                <input type="checkbox" className="rsvp-check" name="g1_attend_wp" id="" onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g1_attend_wp" id="g1_attend_wp" onChange={handleResponse}/>
               </div>
             </div>
             <div className="ind-event">
               <p className="event-name">Ceremony</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g1_attend_c">Will Attend</label>
-                <input type="checkbox" className="rsvp-check" name="g1_attend_c" id="" onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g1_attend_c" id="g1_attend_c" onChange={handleResponse}/>
               </div>
             </div>
           </div>
@@ -141,14 +146,14 @@ export default function RSVPRespond({ partyObj, guestObj }) {
               <p className="event-name">Welcome Party</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g2_attend_wp">Will Attend</label>
-                <input type="checkbox" className="rsvp-check" name="g2_attend_wp" id="" onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g2_attend_wp" id="g2_attend_wp" onChange={handleResponse}/>
               </div>
             </div>
             <div className="ind-event">
               <p className="event-name">Ceremony</p>
               <div className="rsvp-checkboxes">
                 <label htmlFor="g2_attend_c">Will Attend</label>
-                <input type="checkbox" className="rsvp-check" name="g2_attend_c" id="" onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g2_attend_c" id="g2_attend_c" onChange={handleResponse}/>
               </div>
             </div>
           </div>
@@ -165,6 +170,7 @@ export default function RSVPRespond({ partyObj, guestObj }) {
               <div className="rsvp-checkboxes">
                 <label htmlFor="g1_attend_rd">Will Attend</label>
                 <input type="checkbox" className="rsvp-check" name="g1_attend_rd" id="" onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g1_attend_rd" id="g1_attend_rd" onChange={handleResponse}/>
               </div>
             </div>
             <div className="ind-event">
@@ -172,6 +178,7 @@ export default function RSVPRespond({ partyObj, guestObj }) {
               <div className="rsvp-checkboxes">
                 <label htmlFor="g1_attend_wp">Will Attend</label>
                 <input type="checkbox" className="rsvp-check" name="g1_attend_wp" id="" onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g1_attend_wp" id="g1_attend_wp" onChange={handleResponse}/>
               </div>
             </div>
             <div className="ind-event">
@@ -179,6 +186,7 @@ export default function RSVPRespond({ partyObj, guestObj }) {
               <div className="rsvp-checkboxes">
                 <label htmlFor="g1_attend_c">Will Attend</label>
                 <input type="checkbox" className="rsvp-check" name="g1_attend_c" id="" onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g1_attend_c" id="g1_attend_c" onChange={handleResponse}/>
               </div>
             </div>
           </div>
@@ -189,6 +197,7 @@ export default function RSVPRespond({ partyObj, guestObj }) {
               <div className="rsvp-checkboxes">
                 <label htmlFor="g2_attend_rd">Will Attend</label>
                 <input type="checkbox" className="rsvp-check" name="g2_attend_rd" id="" onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g2_attend_rd" id="g2_attend_rd" onChange={handleResponse}/>
               </div>
             </div>
             <div className="ind-event">
@@ -196,6 +205,7 @@ export default function RSVPRespond({ partyObj, guestObj }) {
               <div className="rsvp-checkboxes">
                 <label htmlFor="g2_attend_wp">Will Attend</label>
                 <input type="checkbox" className="rsvp-check" name="g2_attend_wp" id="" onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g2_attend_wp" id="g2_attend_wp" onChange={handleResponse}/>
               </div>
             </div>
             <div className="ind-event">
@@ -203,6 +213,7 @@ export default function RSVPRespond({ partyObj, guestObj }) {
               <div className="rsvp-checkboxes">
                 <label htmlFor="g2_attend_c">Will Attend</label>
                 <input type="checkbox" className="rsvp-check" name="g2_attend_c" id="" onChange={handleResponse}/>
+                <input type="checkbox" className="rsvp-check" name="g2_attend_c" id="g2_attend_c" onChange={handleResponse}/>
               </div>
             </div>
           </div>
