@@ -1,6 +1,5 @@
 import Nav from "../components/nav";
 
-
 export default function RSVPSubmitted() {
     return (
         <div className="page-container">
