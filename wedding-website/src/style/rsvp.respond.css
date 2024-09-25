@@ -13,6 +13,10 @@
     margin: 0 12px;
     min-width: 175px;
 }
+.event-name {
+    padding-bottom: 2px;
+    text-decoration: underline;
+}
 
 .rsvp-check {
     accent-color: var(--accent-darkGold);
@@ -20,4 +24,10 @@
 
 .rsvp-classbtn {
     margin-top: 1rem;
+}
+
+.rsvp-note {
+    font-weight: 700;
+    padding: 2px;
+    border: 2px solid var(--primary-green);
 }

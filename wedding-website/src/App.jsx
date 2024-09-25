@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { Home, Schedule, Travel, Registry, Gallery, WeddingParty, ThingsToDo, FAQ, RSVPSearch } from "./pages";
+import { Home, Schedule, Travel, Registry, Gallery, WeddingParty, ThingsToDo, FAQ, RSVPSearch, RSVPSubmit } from "./pages";
 import ScrollToTop from "./components/ScrollToTop";
-import WIP from "./components/wip";
+// import WIP from "./components/wip";
 import "./App.css";
 
 function App() {
@@ -17,8 +17,9 @@ function App() {
         <Route path="/wedding-party" element={<WeddingParty />}></Route>
         <Route path="/things-to-do" element={<ThingsToDo />}></Route>
         <Route path="/questions" element={<FAQ />}></Route>
-        <Route path="/rsvp" element={<WIP />}></Route>
+        <Route path="/rsvp" element={<RSVPSearch/>}></Route>
         {/* <Route path="/rsvp-test" element={<RSVPSearch />}></Route> */}
+        <Route path="/rsvp-submission" element={<RSVPSubmit />}></Route>
       </Routes>
       <ScrollToTop />
     </Router>
