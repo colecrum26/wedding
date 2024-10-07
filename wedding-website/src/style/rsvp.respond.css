@@ -31,3 +31,7 @@
     padding: 2px;
     border: 2px solid var(--primary-green);
 }
+
+input[type=checkbox] {
+    transform: scale(1.5);
+}
