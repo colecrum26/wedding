@@ -26,12 +26,12 @@ export default function Schedule() {
           <p className="event-time">8:00pm - 10:00pm</p>
           <p>Hotel Hartness Lobby</p>
           <a
-            href="https://maps.app.goo.gl/P1DLLtYHZG9etaMW8"
+            href="https://maps.app.goo.gl/LHoAWmMcCkGf2nLd7"
             className="address-link"
             target="_blank"
             rel="noreferrer"
           >
-            110 Halston Avenue, Greenville, SC 29615
+            120 Halston Avenue, Greenville, SC 29615
           </a>
           <p className="attire">Attire: Cocktail</p>
         </div>
