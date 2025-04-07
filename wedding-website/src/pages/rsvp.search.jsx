@@ -10,6 +10,8 @@ export default function RSVPSearch() {
   const [showComponent, setShowComponent] = useState(false);
   const [displayMessage, setDisplayMessage] = useState("");
 
+  console.log(searchedName);
+
   async function searchGuest() {
     try {
       let response = await fetch("https://wedding-guestlist-production.up.railway.app/api/guests", {
@@ -73,7 +75,8 @@ export default function RSVPSearch() {
             <input
               type="text"
               autoCapitalize="words"
-              onChange={(e) => {setSearchedName(e.target.value.replace(/(^\w|\s\w)(\S*)/g, (_,m1,m2) => m1.toUpperCase()+m2.toLowerCase()))}}
+              onChange={(e) => {setSearchedName(e.target.value)}}
+                // .replace(/(^\w|\s\w)(\S*)/g, (_,m1,m2) => m1.toUpperCase()+m2.toLowerCase()))}}
             />
           </div>
           <div className="form-el-wrapper">
